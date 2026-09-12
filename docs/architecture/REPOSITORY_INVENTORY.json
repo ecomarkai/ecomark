@@ -1,10 +1,10 @@
 {
   "metadata": {
     "schema_version": 1,
-    "generated_at": "2026-09-12T18:04:53.756349+00:00",
-    "revision": "d31565883be90723e734edcfc503bb15994a084e",
+    "generated_at": "2026-09-12T18:23:25.829648+00:00",
+    "revision": "c26444cdffa9ccfe3ce77ff1f34fc9120ab12a5d",
     "worktree_state": "dirty",
-    "file_count": 1338,
+    "file_count": 1386,
     "counts_by_area": {
       "agents": 446,
       "apps": 127,
@@ -15,10 +15,10 @@
       "environments": 1,
       "mcp": 40,
       "operations": 1,
-      "packages": 12,
+      "packages": 59,
       "platform": 1,
       "product": 1,
-      "repository-governance": 19,
+      "repository-governance": 20,
       "scripts": 3,
       "security": 1,
       "services": 388,
@@ -27,31 +27,31 @@
     },
     "counts_by_kind": {
       "asset": 6,
-      "configuration": 258,
-      "contract": 42,
-      "documentation": 260,
+      "configuration": 262,
+      "contract": 51,
+      "documentation": 263,
       "evaluation": 62,
       "generated-inventory": 2,
       "lockfile": 1,
-      "manifest": 52,
+      "manifest": 56,
       "other": 3,
       "placeholder": 485,
-      "source": 161,
+      "source": 182,
       "style": 4,
-      "test": 2
+      "test": 9
     },
     "counts_by_state": {
       "comment-only-stub": 128,
-      "documentation": 260,
+      "documentation": 263,
       "generated": 2,
       "generated-starter": 3,
-      "implemented-source": 9,
-      "implemented-test": 2,
+      "implemented-source": 30,
+      "implemented-test": 9,
       "placeholder": 485,
       "placeholder-data": 14,
       "present": 13,
       "scaffold-source": 13,
-      "specification": 400,
+      "specification": 417,
       "stub": 9
     },
     "self_hash_policy": "Generated inventory files are indexed without byte, line, or hash values."
@@ -132,9 +132,9 @@
       "area": "repository-governance",
       "kind": "documentation",
       "state": "documentation",
-      "bytes": 3533,
-      "lines": 49,
-      "sha256": "00f36fc6517c3548c739bb04d26942eb68a04e4ecd8d8220ff57cab264834f65",
+      "bytes": 5931,
+      "lines": 82,
+      "sha256": "2d7d460ea10b0268c88a7222782046314c3e30d2cf08000a81ffa09fb85254bd",
       "summary": "Ecomark implementation status"
     },
     {
@@ -9108,6 +9108,476 @@
       "summary": "\"name\": \"@ecomarkai/platform\","
     },
     {
+      "path": "packages/config/README.md",
+      "area": "packages",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 3257,
+      "lines": 70,
+      "sha256": "49c3b05de13bcfe7c330f724f7d5ec6076220424545fe49246cc010abbc46c7c",
+      "summary": "@ecomarkai/config"
+    },
+    {
+      "path": "packages/config/eslint.config.mjs",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 226,
+      "lines": 7,
+      "sha256": "56152e3e2c9cf66bb0b1d84e329ade7e79124fb761f1c0cbd511bee26a1d81af",
+      "summary": "export default defineConfig(["
+    },
+    {
+      "path": "packages/config/package.json",
+      "area": "packages",
+      "kind": "manifest",
+      "state": "specification",
+      "bytes": 511,
+      "lines": 24,
+      "sha256": "169c56d7d2fe0352fdb543f4aab69af2eae99fdde8c737203abbad0990f46eaa",
+      "summary": "\"name\": \"@ecomarkai/config\","
+    },
+    {
+      "path": "packages/config/src/definition.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 2225,
+      "lines": 60,
+      "sha256": "b7eb8f596935b2ddad21b19b6677d7d8fc952fb01cc9c86ba9ea1611dfd9d542",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/config/src/exposure.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 1341,
+      "lines": 31,
+      "sha256": "429c0a07f0dccc747e5c335647d85567f28b9548a3a00ecda7ac60e4c4781092",
+      "summary": "type PublicKeys<TDefinition extends AnyConfigDefinition> = {"
+    },
+    {
+      "path": "packages/config/src/index.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 1043,
+      "lines": 39,
+      "sha256": "5cfc0a892656a975f2378abd8c03a0c3a4c60bc310771bd0689f996645d3852d",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/config/src/load.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 4446,
+      "lines": 131,
+      "sha256": "e454a8bf8e444b775b4027e220689e7a524ad3bee51b5d8e14ff7668d747b169",
+      "summary": "AnyConfigDefinition,"
+    },
+    {
+      "path": "packages/config/src/readers.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 4122,
+      "lines": 121,
+      "sha256": "8fce002a9c14cea04008da407af4e0c1a4d8e9348ae4e091c4bfeb326f3e60c4",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/config/tests/config.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 10736,
+      "lines": 309,
+      "sha256": "f08e21da7855e3bfb9742071186613d4e3d172d40a6d7ae782b31191e83548e8",
+      "summary": "REDACTED,"
+    },
+    {
+      "path": "packages/config/tsconfig.json",
+      "area": "packages",
+      "kind": "configuration",
+      "state": "specification",
+      "bytes": 205,
+      "lines": 8,
+      "sha256": "2805a318679fbf6c88fec1598b857cce0340e2cdfa858dd70dd9f3275a0ea449",
+      "summary": "\"extends\": \"../../tsconfig.base.json\","
+    },
+    {
+      "path": "packages/config/vitest.config.mts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 158,
+      "lines": 8,
+      "sha256": "73105c1f5a2ca3e53da4ac4e965c441533529505dcd53bc700d08c356e09f7df",
+      "summary": "export default defineConfig({"
+    },
+    {
+      "path": "packages/contracts/README.md",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 2504,
+      "lines": 54,
+      "sha256": "55058c2aa63ce2f231bc725dbf256c1bd1a09c1da68afe06a71aa084506e16e0",
+      "summary": "@ecomarkai/contracts"
+    },
+    {
+      "path": "packages/contracts/eslint.config.mjs",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 211,
+      "lines": 7,
+      "sha256": "db31b941f4208c148a3426d32d851bfaa8c01f1d07535ea5449a1ef2fd660f33",
+      "summary": "export default defineConfig(["
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "area": "packages",
+      "kind": "manifest",
+      "state": "specification",
+      "bytes": 514,
+      "lines": 24,
+      "sha256": "bdc62ec700bcbbc55c1535c995c8d2c327084319d5939cba3b29a06ce6d59abf",
+      "summary": "\"name\": \"@ecomarkai/contracts\","
+    },
+    {
+      "path": "packages/contracts/src/identifiers.ts",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 2372,
+      "lines": 57,
+      "sha256": "74e4f3e237eb3c210d6544bd87764c26d75007c777491af845829657672a5079",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 995,
+      "lines": 34,
+      "sha256": "db3dd961d2758cbfc55f59cf71228048a0054b4afcde8370a46ff72b8a4e6364",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/contracts/src/pagination.ts",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 910,
+      "lines": 29,
+      "sha256": "e9847c54acc9e50331598b20e9013a4ab19b242862d10152ee48ccc13097a86e",
+      "summary": "/** Deterministic ordering direction for a cursor-paginated list. */"
+    },
+    {
+      "path": "packages/contracts/src/result.ts",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 534,
+      "lines": 17,
+      "sha256": "6628e7ade4e0de845456a4ca9b6be3f2f923c3b6e7442d57aa645155382e123d",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/contracts/src/tenancy.ts",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 1610,
+      "lines": 37,
+      "sha256": "201f8763724851e33ab8650895beec48906a4dc04577f65f8b35d3f1512c456f",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/contracts/tests/identifiers.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 2972,
+      "lines": 87,
+      "sha256": "74e330d575c6db9f8036ec548c91eb261cd2040d81cbb4ff15498bf86aac9fb3",
+      "summary": "isIdentifier,"
+    },
+    {
+      "path": "packages/contracts/tests/types.assert.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 4797,
+      "lines": 145,
+      "sha256": "b177f90f3bb777ef875a605e0d5bc8077d94486ac85b47e59fced1a1030a41a9",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/contracts/tsconfig.json",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 205,
+      "lines": 8,
+      "sha256": "2805a318679fbf6c88fec1598b857cce0340e2cdfa858dd70dd9f3275a0ea449",
+      "summary": "\"extends\": \"../../tsconfig.base.json\","
+    },
+    {
+      "path": "packages/contracts/vitest.config.mts",
+      "area": "packages",
+      "kind": "contract",
+      "state": "specification",
+      "bytes": 158,
+      "lines": 8,
+      "sha256": "73105c1f5a2ca3e53da4ac4e965c441533529505dcd53bc700d08c356e09f7df",
+      "summary": "export default defineConfig({"
+    },
+    {
+      "path": "packages/errors/README.md",
+      "area": "packages",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 2040,
+      "lines": 46,
+      "sha256": "4f7520390484f8edd00abcb1961132c9309d88a92bea5b282a799447b16657bc",
+      "summary": "@ecomarkai/errors"
+    },
+    {
+      "path": "packages/errors/eslint.config.mjs",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 226,
+      "lines": 7,
+      "sha256": "56152e3e2c9cf66bb0b1d84e329ade7e79124fb761f1c0cbd511bee26a1d81af",
+      "summary": "export default defineConfig(["
+    },
+    {
+      "path": "packages/errors/package.json",
+      "area": "packages",
+      "kind": "manifest",
+      "state": "specification",
+      "bytes": 511,
+      "lines": 24,
+      "sha256": "15e3c6fc7e69e821bf5a6d94e517208b73366ce1b95a5424783b89f22a6c6640",
+      "summary": "\"name\": \"@ecomarkai/errors\","
+    },
+    {
+      "path": "packages/errors/src/categories.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 1681,
+      "lines": 56,
+      "sha256": "e09532598841b80097e6d080b6edc91df5673f3e0feb73cd22e435491a33db20",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/errors/src/codes.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 779,
+      "lines": 21,
+      "sha256": "b9888978277b85f323bb82c8e75fe4eb19061a1ea94c796c28fbe2c6328a5a12",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/errors/src/factories.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 4741,
+      "lines": 144,
+      "sha256": "f3611ed111c79fdc4284118188158ad9f41b43d8919132278ad9dc5dd18920fa",
+      "summary": "PlatformError,"
+    },
+    {
+      "path": "packages/errors/src/index.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 1243,
+      "lines": 43,
+      "sha256": "027b88f4fddbfd56f709465849f04065d17a38bd8c8c9601133ed21ce5f73d40",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/errors/src/platform-error.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 3187,
+      "lines": 88,
+      "sha256": "f59a0d6aa78835902c6fb1be48c82cd814e2615e06f85ee6880a91ac707bcbb6",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/errors/src/safe-payload.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 3600,
+      "lines": 100,
+      "sha256": "03671026b299ef9eca70bc5f022850487cc4e5a3a0a1edfac2ac37102fb04e85",
+      "summary": "isPlatformError,"
+    },
+    {
+      "path": "packages/errors/tests/platform-error.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 4085,
+      "lines": 115,
+      "sha256": "f8ca127e714e20c031c18ce6f9d76407240b1fcb615976485d3626b5ac15aa28",
+      "summary": "ERROR_CATEGORIES,"
+    },
+    {
+      "path": "packages/errors/tests/safe-payload.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 4091,
+      "lines": 107,
+      "sha256": "be9fe4cbfca17009d8193504688347f27046dacd905f3649d9476b7dde3429de",
+      "summary": "forbiddenError,"
+    },
+    {
+      "path": "packages/errors/tsconfig.json",
+      "area": "packages",
+      "kind": "configuration",
+      "state": "specification",
+      "bytes": 205,
+      "lines": 8,
+      "sha256": "2805a318679fbf6c88fec1598b857cce0340e2cdfa858dd70dd9f3275a0ea449",
+      "summary": "\"extends\": \"../../tsconfig.base.json\","
+    },
+    {
+      "path": "packages/errors/vitest.config.mts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 158,
+      "lines": 8,
+      "sha256": "73105c1f5a2ca3e53da4ac4e965c441533529505dcd53bc700d08c356e09f7df",
+      "summary": "export default defineConfig({"
+    },
+    {
+      "path": "packages/events/README.md",
+      "area": "packages",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 2812,
+      "lines": 68,
+      "sha256": "c235d3d2b32cda406758355d4e1b0b96195ffa711800814a9ccfebefceb06cab",
+      "summary": "@ecomarkai/events"
+    },
+    {
+      "path": "packages/events/eslint.config.mjs",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 226,
+      "lines": 7,
+      "sha256": "56152e3e2c9cf66bb0b1d84e329ade7e79124fb761f1c0cbd511bee26a1d81af",
+      "summary": "export default defineConfig(["
+    },
+    {
+      "path": "packages/events/package.json",
+      "area": "packages",
+      "kind": "manifest",
+      "state": "specification",
+      "bytes": 511,
+      "lines": 24,
+      "sha256": "a9d34d81d097afdc813f7f890de0e02c885355c7752816a43817b00b1a3a9a94",
+      "summary": "\"name\": \"@ecomarkai/events\","
+    },
+    {
+      "path": "packages/events/src/envelope.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 5277,
+      "lines": 146,
+      "sha256": "34dfd1fd13f8bf540a6af864658feb4a91e0c0054f7db9a1ae1aa727f17cd383",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/events/src/index.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 923,
+      "lines": 30,
+      "sha256": "6089cb350ba94074c438c2357b9f6cfff4ebc911985612df27b27d17d6401850",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/events/src/invariants.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 4491,
+      "lines": 117,
+      "sha256": "9d63ed115cc6cc22110eff5284ae696d48963c33e1a90629d7ea2e6d784c24bf",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/events/src/tenant-ref.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 1250,
+      "lines": 32,
+      "sha256": "8d79ceb7fadb098eafbde9f78d0c1f1fb0fd1a9191d2033c2150016b028678ed",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/events/tests/envelope.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 6501,
+      "lines": 210,
+      "sha256": "94c7dc40b9f38046f002f881a84a29dba44d9657391df0025085df77108d2d89",
+      "summary": "createEventEnvelope,"
+    },
+    {
+      "path": "packages/events/tests/invariants.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 6460,
+      "lines": 204,
+      "sha256": "b0ac493aea4a376f12226d3913bb7ab217dcab25ff1aa23304e615707765f02b",
+      "summary": "createEventEnvelope,"
+    },
+    {
+      "path": "packages/events/tsconfig.json",
+      "area": "packages",
+      "kind": "configuration",
+      "state": "specification",
+      "bytes": 205,
+      "lines": 8,
+      "sha256": "2805a318679fbf6c88fec1598b857cce0340e2cdfa858dd70dd9f3275a0ea449",
+      "summary": "\"extends\": \"../../tsconfig.base.json\","
+    },
+    {
+      "path": "packages/events/vitest.config.mts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 158,
+      "lines": 8,
+      "sha256": "73105c1f5a2ca3e53da4ac4e965c441533529505dcd53bc700d08c356e09f7df",
+      "summary": "export default defineConfig({"
+    },
+    {
       "path": "packages/ui/README.md",
       "area": "packages",
       "kind": "documentation",
@@ -9242,9 +9712,9 @@
       "area": "repository-governance",
       "kind": "lockfile",
       "state": "present",
-      "bytes": 185272,
-      "lines": 5582,
-      "sha256": "954256e8918ea89be7f9d4f4f7a67a070f36f5dd73e9db0b82e67ae173f035c6",
+      "bytes": 184600,
+      "lines": 5604,
+      "sha256": "654488ac63431d23433b6d48b331ac33b0ee77a39b62a7763b1442716539afa8",
       "summary": "lockfileVersion: '9.0'"
     },
     {
@@ -13396,6 +13866,16 @@
       "lines": 12,
       "sha256": "e2d85db9f18af926c1d121503596c2c3a263327bb5c9f48b4f43cc70092b651c",
       "summary": "version: 1"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "area": "repository-governance",
+      "kind": "configuration",
+      "state": "specification",
+      "bytes": 628,
+      "lines": 23,
+      "sha256": "c059e2a37934a8810918a69a199c89690657cfb5838b2faec8faf1f55fee5da3",
+      "summary": "\"$schema\": \"https://json.schemastore.org/tsconfig\","
     },
     {
       "path": "turbo.json",

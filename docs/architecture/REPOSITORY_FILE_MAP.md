@@ -4,9 +4,9 @@ This generated index lists every tracked or non-ignored repository file in the c
 worktree. It describes presence and implementation state; it does not claim product readiness.
 Regenerate with `python scripts/generate_repository_inventory.py`.
 
-- Snapshot revision: `d31565883be90723e734edcfc503bb15994a084e`
+- Snapshot revision: `c26444cdffa9ccfe3ce77ff1f34fc9120ab12a5d`
 - Worktree: `dirty`
-- Files indexed: 1338
+- Files indexed: 1386
 - The two generated inventory files intentionally omit self-hashes.
 
 State legend: `implemented-source` means substantive source exists, not that its integration or
@@ -952,6 +952,53 @@ release checks pass. `scaffold-source`, `stub`, `comment-only-stub`, `placeholde
 
 | Path | Kind | State | Summary |
 |---|---|---|---|
+| `packages/config/README.md` | documentation | documentation | @ecomarkai/config |
+| `packages/config/eslint.config.mjs` | source | implemented-source | export default defineConfig([ |
+| `packages/config/package.json` | manifest | specification | "name": "@ecomarkai/config", |
+| `packages/config/src/definition.ts` | source | implemented-source | /** |
+| `packages/config/src/exposure.ts` | source | implemented-source | type PublicKeys<TDefinition extends AnyConfigDefinition> = { |
+| `packages/config/src/index.ts` | source | implemented-source | /** |
+| `packages/config/src/load.ts` | source | implemented-source | AnyConfigDefinition, |
+| `packages/config/src/readers.ts` | source | implemented-source | /** |
+| `packages/config/tests/config.test.ts` | test | implemented-test | REDACTED, |
+| `packages/config/tsconfig.json` | configuration | specification | "extends": "../../tsconfig.base.json", |
+| `packages/config/vitest.config.mts` | source | implemented-source | export default defineConfig({ |
+| `packages/contracts/README.md` | contract | specification | @ecomarkai/contracts |
+| `packages/contracts/eslint.config.mjs` | contract | specification | export default defineConfig([ |
+| `packages/contracts/package.json` | manifest | specification | "name": "@ecomarkai/contracts", |
+| `packages/contracts/src/identifiers.ts` | contract | specification | /** |
+| `packages/contracts/src/index.ts` | contract | specification | /** |
+| `packages/contracts/src/pagination.ts` | contract | specification | /** Deterministic ordering direction for a cursor-paginated list. */ |
+| `packages/contracts/src/result.ts` | contract | specification | /** |
+| `packages/contracts/src/tenancy.ts` | contract | specification | /** |
+| `packages/contracts/tests/identifiers.test.ts` | test | implemented-test | isIdentifier, |
+| `packages/contracts/tests/types.assert.ts` | test | implemented-test | /** |
+| `packages/contracts/tsconfig.json` | contract | specification | "extends": "../../tsconfig.base.json", |
+| `packages/contracts/vitest.config.mts` | contract | specification | export default defineConfig({ |
+| `packages/errors/README.md` | documentation | documentation | @ecomarkai/errors |
+| `packages/errors/eslint.config.mjs` | source | implemented-source | export default defineConfig([ |
+| `packages/errors/package.json` | manifest | specification | "name": "@ecomarkai/errors", |
+| `packages/errors/src/categories.ts` | source | implemented-source | /** |
+| `packages/errors/src/codes.ts` | source | implemented-source | /** |
+| `packages/errors/src/factories.ts` | source | implemented-source | PlatformError, |
+| `packages/errors/src/index.ts` | source | implemented-source | /** |
+| `packages/errors/src/platform-error.ts` | source | implemented-source | /** |
+| `packages/errors/src/safe-payload.ts` | source | implemented-source | isPlatformError, |
+| `packages/errors/tests/platform-error.test.ts` | test | implemented-test | ERROR_CATEGORIES, |
+| `packages/errors/tests/safe-payload.test.ts` | test | implemented-test | forbiddenError, |
+| `packages/errors/tsconfig.json` | configuration | specification | "extends": "../../tsconfig.base.json", |
+| `packages/errors/vitest.config.mts` | source | implemented-source | export default defineConfig({ |
+| `packages/events/README.md` | documentation | documentation | @ecomarkai/events |
+| `packages/events/eslint.config.mjs` | source | implemented-source | export default defineConfig([ |
+| `packages/events/package.json` | manifest | specification | "name": "@ecomarkai/events", |
+| `packages/events/src/envelope.ts` | source | implemented-source | /** |
+| `packages/events/src/index.ts` | source | implemented-source | /** |
+| `packages/events/src/invariants.ts` | source | implemented-source | /** |
+| `packages/events/src/tenant-ref.ts` | source | implemented-source | /** |
+| `packages/events/tests/envelope.test.ts` | test | implemented-test | createEventEnvelope, |
+| `packages/events/tests/invariants.test.ts` | test | implemented-test | createEventEnvelope, |
+| `packages/events/tsconfig.json` | configuration | specification | "extends": "../../tsconfig.base.json", |
+| `packages/events/vitest.config.mts` | source | implemented-source | export default defineConfig({ |
 | `packages/ui/README.md` | documentation | documentation | `@ecomarkai/ui` |
 | `packages/ui/eslint.config.mjs` | source | implemented-source | export default defineConfig([ |
 | `packages/ui/package.json` | manifest | specification | "name": "@ecomarkai/ui", |
@@ -999,6 +1046,7 @@ release checks pass. `scaffold-source`, `stub`, `comment-only-stub`, `placeholde
 | `pnpm-lock.yaml` | lockfile | present | lockfileVersion: '9.0' |
 | `pnpm-workspace.yaml` | configuration | specification | packages: |
 | `pyproject.toml` | manifest | specification | name = "ecomark-platform" |
+| `tsconfig.base.json` | configuration | specification | "$schema": "https://json.schemastore.org/tsconfig", |
 | `turbo.json` | configuration | specification | "$schema": "https://turbo.build/schema.json", |
 
 ## scripts
