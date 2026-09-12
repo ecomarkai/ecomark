@@ -27,28 +27,44 @@ Step 2 shared package foundation (implemented, with passing lint, typecheck and 
 | `@ecomarkai/errors` | Framework-neutral error primitives, stable codes, retry semantics and the safe serialization boundary | 24 tests |
 | `@ecomarkai/events` | Event envelope, factories, generic tenant reference and envelope invariant checks. No broker, outbox, queue, worker or transport | 34 tests |
 | `@ecomarkai/config` | Configuration contracts, result-returning startup validation, server/public exposure boundary and secret redaction | 22 tests |
+| `@ecomarkai/schemas` | Zod 4 runtime validation for shared boundaries: branded identifier schemas, cursor pagination input, library-neutral `parse` helper | 23 tests plus 10 compile-time assertions |
 
-**All four packages are independent.** None depends on another, so the dependency graph has no
-internal edges and is trivially acyclic. Each declares only development tooling.
+`contracts`, `errors`, `events` and `config` remain independent of each other. `schemas` depends
+on `contracts` in one direction only, so it can reuse the identifier rule rather than restate it.
+The graph is acyclic.
+
+`@ecomarkai/ui` now has the `src/index.ts` entry point its `exports` map always declared, so the
+package is importable. Its test suite replaces the previous identity assertion with real
+behavioral coverage plus a guard that every declared export target exists on disk.
 
 These packages contain contracts, primitives and local parsing only. They are not a core API,
 and no database, cache, authentication provider, tenancy runtime, AI or integration was
 introduced.
 
-`@ecomarkai/schemas` was **deliberately not created.** No runtime validation technology is
-approved for this repository, and a shared validation abstraction would have had no consumer
-once `config` and `events` became independent: each needs only a small amount of local parsing.
-Runtime schema implementation is **deferred pending an ADR** that selects a validation library
-alongside the core API framework. No validation dependency was introduced.
+ECO-001A Step 2.5 resolved the runtime validation question that Step 2 deferred.
+[ADR-0001](docs/adr/ADR-0001-runtime-validation-zod.md) selects Zod 4, and `@ecomarkai/schemas`
+now exists. Zod is the only runtime dependency in the repository and is declared solely by
+`@ecomarkai/schemas`; consumers use that package's `parse` helper and never import `zod`.
+`config` and `events` keep their own local parsing and remain dependency-free.
+
+Step 2.5 also established the [OSS technology registry](docs/architecture/OSS_TECHNOLOGY_REGISTRY.md)
+and [OSS reuse policy](docs/architecture/OSS_REUSE_POLICY.md), and recorded the internal package
+consumption model in [ADR-0002](docs/adr/ADR-0002-internal-package-consumption-model.md). Most
+registry entries are decisions only: NestJS, Drizzle, PostgreSQL, Redis, BullMQ, Temporal,
+OpenTelemetry, MCP, LiteLLM, Langfuse and OpenFGA are **recorded but not installed**.
 
 `packages/contracts` is not yet the single contract authority: the JSON Schema definitions under
 the repository root `contracts/` directory have not been migrated or superseded, and no
 duplicate of them was created. That consolidation remains open ECO-001A work.
 
-Known defect, not introduced by Step 2 and deliberately not fixed in it:
-`packages/ui/package.json` declares `"exports": { ".": "./src/index.ts" }`, but
-`packages/ui/src/index.ts` does not exist and `packages/ui/src/components/` is empty, so
-`@ecomarkai/ui` cannot currently be imported by a consumer.
+The `@ecomarkai/ui` export defect reported by Step 2 is **resolved** in Step 2.5.
+`packages/ui/src/components/` remains empty: there is still no component library, and the
+stylesheets are consumed through the separate `styles.css` and `tokens.css` export paths.
+
+Open gap, visible and unaddressed: **`apps/web` has no test script.** It participates in lint,
+typecheck and build, but contributes zero tests, so the web application has no automated
+behavioral coverage of any kind. This is recorded for a separate ticket; see
+[testing strategy](docs/engineering/TESTING_STRATEGY.md) for the suites it will eventually owe.
 
 Repository inventory: the 2026-09-12 study at
 [AI_REPOSITORY_GUIDE.md](AI_REPOSITORY_GUIDE.md) and the generated
@@ -64,7 +80,7 @@ NOT implemented: Ecomark dashboard screens, authentication or tenant runtime, Sh
 real metrics, grounded AI analysis, billing integration, live MCP sessions, provider adapters, live
 creative generation, ad publication, ECS/Fargate deployment, or load-tested isolation.
 Most scaffold source files and `.gitkeep` files are placeholders. Root Turbo scripts are orchestration
-entry points; six workspace packages now participate, and the remaining scaffold directories under
+entry points; seven workspace packages now participate, and the remaining scaffold directories under
 `services/` and `connectors/` still have no runnable manifests or tests. JSON/YAML parsing, lint,
 and type checking are not integration tests. Requirement documents, example thresholds, limits, and
 latency targets are planned gates or assumptions, not measured SLOs or claims of present conformance.

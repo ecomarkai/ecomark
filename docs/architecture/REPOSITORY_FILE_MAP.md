@@ -4,9 +4,9 @@ This generated index lists every tracked or non-ignored repository file in the c
 worktree. It describes presence and implementation state; it does not claim product readiness.
 Regenerate with `python scripts/generate_repository_inventory.py`.
 
-- Snapshot revision: `c26444cdffa9ccfe3ce77ff1f34fc9120ab12a5d`
+- Snapshot revision: `7a1c3e73406f0846f365e3bd3dc849943ce25192`
 - Worktree: `dirty`
-- Files indexed: 1386
+- Files indexed: 1403
 - The two generated inventory files intentionally omit self-hashes.
 
 State legend: `implemented-source` means substantive source exists, not that its integration or
@@ -847,6 +847,8 @@ release checks pass. `scaffold-source`, `stub`, `comment-only-stub`, `placeholde
 | Path | Kind | State | Summary |
 |---|---|---|---|
 | `docs/README.md` | documentation | documentation | Ecomark documentation index |
+| `docs/adr/ADR-0001-runtime-validation-zod.md` | documentation | documentation | ADR-0001: Runtime validation with Zod 4 |
+| `docs/adr/ADR-0002-internal-package-consumption-model.md` | documentation | documentation | ADR-0002: Internal packages are consumed as TypeScript source |
 | `docs/adr/README.md` | documentation | documentation | Architecture Decision Records |
 | `docs/architecture/API_MCP_SKILLS.md` | documentation | documentation | API, MCP and Skills |
 | `docs/architecture/AUTOMATION_PLATFORM.md` | documentation | documentation | Automation platform |
@@ -855,6 +857,8 @@ release checks pass. `scaffold-source`, `stub`, `comment-only-stub`, `placeholde
 | `docs/architecture/INTEGRATION_SCALE.md` | documentation | documentation | Integration scale |
 | `docs/architecture/MCP_CONNECTION_GUIDE_AR.md` | documentation | documentation | دليل ربط Ecomark بـMCP و ومزودي الأدوات |
 | `docs/architecture/MEDIA_LIBRARY.md` | documentation | documentation | Tenant media library |
+| `docs/architecture/OSS_REUSE_POLICY.md` | documentation | documentation | Ecomark OSS reuse policy |
+| `docs/architecture/OSS_TECHNOLOGY_REGISTRY.md` | documentation | documentation | Ecomark OSS technology registry |
 | `docs/architecture/README.md` | documentation | documentation | Architecture Index |
 | `docs/architecture/REPOSITORY_BLUEPRINT.md` | documentation | documentation | Repository blueprint |
 | `docs/architecture/REPOSITORY_FILE_MAP.md` | generated-inventory | generated | Generated human-readable path and implementation-state map. |
@@ -999,15 +1003,28 @@ release checks pass. `scaffold-source`, `stub`, `comment-only-stub`, `placeholde
 | `packages/events/tests/invariants.test.ts` | test | implemented-test | createEventEnvelope, |
 | `packages/events/tsconfig.json` | configuration | specification | "extends": "../../tsconfig.base.json", |
 | `packages/events/vitest.config.mts` | source | implemented-source | export default defineConfig({ |
+| `packages/schemas/README.md` | documentation | documentation | @ecomarkai/schemas |
+| `packages/schemas/eslint.config.mjs` | source | implemented-source | export default defineConfig([ |
+| `packages/schemas/package.json` | manifest | specification | "name": "@ecomarkai/schemas", |
+| `packages/schemas/src/identifiers.ts` | source | implemented-source | toCorrelationId, |
+| `packages/schemas/src/index.ts` | source | implemented-source | /** |
+| `packages/schemas/src/pagination.ts` | source | implemented-source | /** |
+| `packages/schemas/src/parse.ts` | source | implemented-source | /** |
+| `packages/schemas/tests/identifiers.test.ts` | test | implemented-test | correlationIdSchema, |
+| `packages/schemas/tests/pagination.test.ts` | test | implemented-test | DEFAULT_PAGE_LIMIT, |
+| `packages/schemas/tests/types.assert.ts` | test | implemented-test | /** |
+| `packages/schemas/tsconfig.json` | configuration | specification | "extends": "../../tsconfig.base.json", |
+| `packages/schemas/vitest.config.mts` | source | implemented-source | export default defineConfig({ |
 | `packages/ui/README.md` | documentation | documentation | `@ecomarkai/ui` |
 | `packages/ui/eslint.config.mjs` | source | implemented-source | export default defineConfig([ |
 | `packages/ui/package.json` | manifest | specification | "name": "@ecomarkai/ui", |
+| `packages/ui/src/index.ts` | source | implemented-source | /** |
 | `packages/ui/src/lib/class-names.ts` | source | implemented-source | export type ClassNameValue = string \| false \| null \| undefined; |
 | `packages/ui/src/styles/foundations.css` | style | present | *, |
 | `packages/ui/src/styles/index.css` | style | present | @import "./tokens.css"; |
 | `packages/ui/src/styles/tokens.css` | style | present | :root, |
 | `packages/ui/tests/.gitkeep` | placeholder | placeholder | Reserves an intended directory; contains no implementation. |
-| `packages/ui/tests/package.test.ts` | test | implemented-test | describe("@ecomarkai/ui", () => { |
+| `packages/ui/tests/package.test.ts` | test | implemented-test | const packageRoot = resolve(dirname(fileURLToPath(import.meta.url)), ".."); |
 | `packages/ui/tests/setup.ts` | test | implemented-test | Test file. |
 | `packages/ui/tsconfig.json` | configuration | specification | "compilerOptions": { |
 | `packages/ui/vitest.config.mts` | source | implemented-source | export default defineConfig({ |

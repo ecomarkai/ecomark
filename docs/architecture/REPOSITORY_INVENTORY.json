@@ -1,21 +1,21 @@
 {
   "metadata": {
     "schema_version": 1,
-    "generated_at": "2026-09-12T18:23:25.829648+00:00",
-    "revision": "c26444cdffa9ccfe3ce77ff1f34fc9120ab12a5d",
+    "generated_at": "2026-09-12T18:37:02.568389+00:00",
+    "revision": "7a1c3e73406f0846f365e3bd3dc849943ce25192",
     "worktree_state": "dirty",
-    "file_count": 1386,
+    "file_count": 1403,
     "counts_by_area": {
       "agents": 446,
       "apps": 127,
       "compliance": 9,
       "connectors": 210,
       "contracts": 12,
-      "docs": 44,
+      "docs": 48,
       "environments": 1,
       "mcp": 40,
       "operations": 1,
-      "packages": 59,
+      "packages": 72,
       "platform": 1,
       "product": 1,
       "repository-governance": 20,
@@ -27,31 +27,31 @@
     },
     "counts_by_kind": {
       "asset": 6,
-      "configuration": 262,
+      "configuration": 263,
       "contract": 51,
-      "documentation": 263,
+      "documentation": 268,
       "evaluation": 62,
       "generated-inventory": 2,
       "lockfile": 1,
-      "manifest": 56,
+      "manifest": 57,
       "other": 3,
       "placeholder": 485,
-      "source": 182,
+      "source": 189,
       "style": 4,
-      "test": 9
+      "test": 12
     },
     "counts_by_state": {
       "comment-only-stub": 128,
-      "documentation": 263,
+      "documentation": 268,
       "generated": 2,
       "generated-starter": 3,
-      "implemented-source": 30,
-      "implemented-test": 9,
+      "implemented-source": 37,
+      "implemented-test": 12,
       "placeholder": 485,
       "placeholder-data": 14,
       "present": 13,
       "scaffold-source": 13,
-      "specification": 417,
+      "specification": 419,
       "stub": 9
     },
     "self_hash_policy": "Generated inventory files are indexed without byte, line, or hash values."
@@ -132,9 +132,9 @@
       "area": "repository-governance",
       "kind": "documentation",
       "state": "documentation",
-      "bytes": 5931,
-      "lines": 82,
-      "sha256": "2d7d460ea10b0268c88a7222782046314c3e30d2cf08000a81ffa09fb85254bd",
+      "bytes": 7223,
+      "lines": 98,
+      "sha256": "fb58f54ae22966a2d18b8d0898138476e06f834505b56aeebc87c73c8a81127b",
       "summary": "Ecomark implementation status"
     },
     {
@@ -8242,19 +8242,39 @@
       "area": "docs",
       "kind": "documentation",
       "state": "documentation",
-      "bytes": 4628,
-      "lines": 81,
-      "sha256": "93c76035338874211d919522d2d60778bec0f506829db06392f938e9a90b58ba",
+      "bytes": 4926,
+      "lines": 83,
+      "sha256": "9a1fad0ff877738dc713904e672daf1f100da5c647bc0ff6e45aeedc6d5133c4",
       "summary": "Ecomark documentation index"
+    },
+    {
+      "path": "docs/adr/ADR-0001-runtime-validation-zod.md",
+      "area": "docs",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 9631,
+      "lines": 178,
+      "sha256": "d0d4d72adffacfabb38c9cf1b96db3d6db8a87049255a3441ca0aead1366789f",
+      "summary": "ADR-0001: Runtime validation with Zod 4"
+    },
+    {
+      "path": "docs/adr/ADR-0002-internal-package-consumption-model.md",
+      "area": "docs",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 5066,
+      "lines": 101,
+      "sha256": "2001d65b029f992f924498bb151afc83bfc366487f6ad76f2bb00f97ba2852c8",
+      "summary": "ADR-0002: Internal packages are consumed as TypeScript source"
     },
     {
       "path": "docs/adr/README.md",
       "area": "docs",
       "kind": "documentation",
       "state": "documentation",
-      "bytes": 541,
-      "lines": 15,
-      "sha256": "67613fc76b6b8214bef230048c1d45617fe0eaba18e030d8ffa4bc41ad52c8e4",
+      "bytes": 1313,
+      "lines": 33,
+      "sha256": "7297ae8a41ed4d7948494e374d544ca0fdd900ef955afec7e698b5c8b8357a85",
       "summary": "Architecture Decision Records"
     },
     {
@@ -8326,6 +8346,26 @@
       "lines": 9,
       "sha256": "4ab30ccab7d6720b12df7d5706e0eed35b7b930c55a76d0fdcd8d563f72a46f2",
       "summary": "Tenant media library"
+    },
+    {
+      "path": "docs/architecture/OSS_REUSE_POLICY.md",
+      "area": "docs",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 5293,
+      "lines": 117,
+      "sha256": "c79e8a68f10ff588e6977d4b8b7cf21b4bd2be7e478766d98742e1e9c3cbde0c",
+      "summary": "Ecomark OSS reuse policy"
+    },
+    {
+      "path": "docs/architecture/OSS_TECHNOLOGY_REGISTRY.md",
+      "area": "docs",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 24681,
+      "lines": 633,
+      "sha256": "fa7321fb74e561b4941254c3cb5d1e64b00db5d840a09a0e350084d14f0ea61c",
+      "summary": "Ecomark OSS technology registry"
     },
     {
       "path": "docs/architecture/README.md",
@@ -9578,6 +9618,126 @@
       "summary": "export default defineConfig({"
     },
     {
+      "path": "packages/schemas/README.md",
+      "area": "packages",
+      "kind": "documentation",
+      "state": "documentation",
+      "bytes": 3808,
+      "lines": 79,
+      "sha256": "a371b17df362c35b3c86fc8106972ba8b0f7b5d51c3e91492571c947905058e4",
+      "summary": "@ecomarkai/schemas"
+    },
+    {
+      "path": "packages/schemas/eslint.config.mjs",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 211,
+      "lines": 7,
+      "sha256": "db31b941f4208c148a3426d32d851bfaa8c01f1d07535ea5449a1ef2fd660f33",
+      "summary": "export default defineConfig(["
+    },
+    {
+      "path": "packages/schemas/package.json",
+      "area": "packages",
+      "kind": "manifest",
+      "state": "specification",
+      "bytes": 599,
+      "lines": 28,
+      "sha256": "63b0623bdb61cdc0ddfdcbe699a008144dc3dd57b37df1fbccbd3eba1b5acffc",
+      "summary": "\"name\": \"@ecomarkai/schemas\","
+    },
+    {
+      "path": "packages/schemas/src/identifiers.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 2328,
+      "lines": 70,
+      "sha256": "0c95e405272aebb63cb74ebd000bfcf9ffa1d6c6e99b8cd4a3dad0b88c414dac",
+      "summary": "toCorrelationId,"
+    },
+    {
+      "path": "packages/schemas/src/index.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 1370,
+      "lines": 42,
+      "sha256": "32bb056304ca43117fa477badd1d531005e800243764ae7241529e32d0eac269",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/schemas/src/pagination.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 1719,
+      "lines": 42,
+      "sha256": "91db069347c3402fd2c3ff0c7842a695d8558df5eab06a0a5b8421c41b86b7f5",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/schemas/src/parse.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 2595,
+      "lines": 76,
+      "sha256": "07687023e268ab48cd595a0c7ec07ea63ba1c03488ebe8bab6a4478a897aeb72",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/schemas/tests/identifiers.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 4134,
+      "lines": 109,
+      "sha256": "c9a884978227b29e0e1a77cd6e861932bfecc419fc54044308513cbef6de4736",
+      "summary": "correlationIdSchema,"
+    },
+    {
+      "path": "packages/schemas/tests/pagination.test.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 4147,
+      "lines": 114,
+      "sha256": "7302529a778009315a40949f2ea722b41a3ad1c93a9ffbb80ae9558e559e98df",
+      "summary": "DEFAULT_PAGE_LIMIT,"
+    },
+    {
+      "path": "packages/schemas/tests/types.assert.ts",
+      "area": "packages",
+      "kind": "test",
+      "state": "implemented-test",
+      "bytes": 3197,
+      "lines": 94,
+      "sha256": "079a3ec00e88274b668d57765de961b6b15680195ec61d28cb76694605dd52e4",
+      "summary": "/**"
+    },
+    {
+      "path": "packages/schemas/tsconfig.json",
+      "area": "packages",
+      "kind": "configuration",
+      "state": "specification",
+      "bytes": 205,
+      "lines": 8,
+      "sha256": "2805a318679fbf6c88fec1598b857cce0340e2cdfa858dd70dd9f3275a0ea449",
+      "summary": "\"extends\": \"../../tsconfig.base.json\","
+    },
+    {
+      "path": "packages/schemas/vitest.config.mts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 158,
+      "lines": 8,
+      "sha256": "73105c1f5a2ca3e53da4ac4e965c441533529505dcd53bc700d08c356e09f7df",
+      "summary": "export default defineConfig({"
+    },
+    {
       "path": "packages/ui/README.md",
       "area": "packages",
       "kind": "documentation",
@@ -9606,6 +9766,16 @@
       "lines": 42,
       "sha256": "4def530a2bb34fd335e33a8760b1d1eb4e20e350111d0cc015d9c76c5ce4c05f",
       "summary": "\"name\": \"@ecomarkai/ui\","
+    },
+    {
+      "path": "packages/ui/src/index.ts",
+      "area": "packages",
+      "kind": "source",
+      "state": "implemented-source",
+      "bytes": 715,
+      "lines": 15,
+      "sha256": "e350fab7140d3bfefc9bbbd29a48cab4d57ed98294b1cb6f22b59a9b4e28b6fc",
+      "summary": "/**"
     },
     {
       "path": "packages/ui/src/lib/class-names.ts",
@@ -9662,10 +9832,10 @@
       "area": "packages",
       "kind": "test",
       "state": "implemented-test",
-      "bytes": 196,
-      "lines": 7,
-      "sha256": "38157f2fdeb478cc0e71de201eea624d001ecbb253e5580c5daa2ef957312d17",
-      "summary": "describe(\"@ecomarkai/ui\", () => {"
+      "bytes": 2181,
+      "lines": 55,
+      "sha256": "19fa900b9c2cf029d32c9cbc1e00a4bc71c6515b4d65e6124dc914923a60be9f",
+      "summary": "const packageRoot = resolve(dirname(fileURLToPath(import.meta.url)), \"..\");"
     },
     {
       "path": "packages/ui/tests/setup.ts",
@@ -9712,9 +9882,9 @@
       "area": "repository-governance",
       "kind": "lockfile",
       "state": "present",
-      "bytes": 184600,
-      "lines": 5604,
-      "sha256": "654488ac63431d23433b6d48b331ac33b0ee77a39b62a7763b1442716539afa8",
+      "bytes": 185286,
+      "lines": 5629,
+      "sha256": "12552c1f0a7fac102c23c37bc58e88e59826f1223d95b7cd7d4f019bc635a630",
       "summary": "lockfileVersion: '9.0'"
     },
     {
@@ -13882,9 +14052,9 @@
       "area": "repository-governance",
       "kind": "configuration",
       "state": "specification",
-      "bytes": 296,
-      "lines": 10,
-      "sha256": "3ad80f0c18cd018bae3a0fa216bef68001832f1db466bb9b6fd23cccc2817790",
+      "bytes": 393,
+      "lines": 26,
+      "sha256": "e07bc5ccf1028543dc87531e74b43e2d4287263985e11ed221f7e4ec025ad1d5",
       "summary": "\"$schema\": \"https://turbo.build/schema.json\","
     },
     {

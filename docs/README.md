@@ -17,6 +17,8 @@ Existing security, contribution, scaling, ownership, architecture, operational, 
 - [Current repository file map](architecture/REPOSITORY_FILE_MAP.md)
 - [Machine-readable repository inventory](architecture/REPOSITORY_INVENTORY.json)
 - [Ecomark rename report](migrations/ECOMARK_RENAME_REPORT.md)
+- [OSS technology registry](architecture/OSS_TECHNOLOGY_REGISTRY.md)
+- [OSS reuse policy](architecture/OSS_REUSE_POLICY.md)
 
 ## Product
 
@@ -70,7 +72,7 @@ Existing security, contribution, scaling, ownership, architecture, operational, 
 
 - [Architecture index](architecture/README.md) and the existing architecture specifications in `docs/architecture/`
 - [Repository inventory generator](../scripts/generate_repository_inventory.py)
-- [Architecture decision records](adr/README.md)
+- [Architecture decision records](adr/README.md), including [ADR-0001 runtime validation](adr/ADR-0001-runtime-validation-zod.md) and [ADR-0002 package consumption model](adr/ADR-0002-internal-package-consumption-model.md)
 - [Technical due-diligence index](due-diligence/README.md)
 - [MCP platform](../mcp/README.md) and [MCP runtime boundaries](../services/mcp-gateway/security/runtime-boundaries.md)
 - [Agent platform](../agents/README.md), [connector platform](../connectors/README.md), and [contract ownership](../contracts/README.md)
