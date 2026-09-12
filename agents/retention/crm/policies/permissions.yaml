@@ -1,0 +1,6 @@
+version: 1
+agent: crm
+default_effect: deny
+read: []
+propose: []
+execute: []

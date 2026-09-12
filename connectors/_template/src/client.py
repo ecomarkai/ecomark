@@ -1,0 +1,1 @@
+"""Typed vendor API client."""

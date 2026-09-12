@@ -1,0 +1,26 @@
+version: 1
+id: provider-id
+tenant_id: tenant-id
+enabled: false
+transport: streamable-http
+endpoint_secret_ref: secret://tenant/provider/endpoint
+authentication:
+  type: oauth2
+  credential_secret_ref: secret://tenant/provider/oauth
+trust:
+  vendor_verified: false
+  endpoint_allowlisted: false
+  tls_required: true
+tool_policy:
+  discovery: quarantine
+  default_effect: deny
+  allow: []
+limits:
+  request_timeout_ms: 30000
+  max_concurrency: 2
+  requests_per_minute: 10
+  daily_cost_limit: 0
+safety:
+  dry_run_required: true
+  audit_all_calls: true
+  import_outputs_to_media_library: true

@@ -1,0 +1,8 @@
+version: 1
+authorization_mode: multi-user
+scope: https://www.googleapis.com/auth/adwords
+client_id_secret_ref: secret://platform/google-ads/client-id
+client_secret_ref: secret://platform/google-ads/client-secret
+developer_token_secret_ref: secret://platform/google-ads/developer-token
+redirect_uri: https://app.ecomark.ai/integrations/google-ads/callback
+tenant_refresh_token_secret_ref: secret://tenant/google-ads/refresh-token

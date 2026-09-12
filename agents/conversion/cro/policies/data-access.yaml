@@ -1,0 +1,7 @@
+version: 1
+agent: cro
+tenant_scope_required: true
+pii_access: denied
+cross_tenant_learning:
+  raw_data: denied
+  approved_aggregates: allowed

@@ -1,0 +1,7 @@
+version: 1
+id: admin-portal
+owner: ecomark-product
+purpose: "Internal support, risk, tenant health and operations"
+runtime: typescript
+tenancy: required
+observability: enabled

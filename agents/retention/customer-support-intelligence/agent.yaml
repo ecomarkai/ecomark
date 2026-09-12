@@ -1,0 +1,15 @@
+version: 1
+id: customer-support-intelligence
+family: retention
+status: planned
+owner: ecomark-eco
+runtime: python
+entrypoint: src.agent:Agent
+autonomy:
+  maximum: recommend
+  default: recommend
+contracts:
+  input: contracts/input.schema.json
+  output: contracts/output.schema.json
+policy_directory: policies
+evaluation_directory: evaluations

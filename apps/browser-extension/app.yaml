@@ -1,0 +1,7 @@
+version: 1
+id: browser-extension
+owner: ecomark-product
+runtime: typescript-webextension
+status: future
+browsers: [chrome, edge, firefox]
+permissions_strategy: least-privilege

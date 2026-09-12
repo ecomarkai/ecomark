@@ -1,0 +1,18 @@
+version: 1
+default_effect: deny
+requirements:
+  - tenant_binding
+  - tls
+  - endpoint_allowlist
+  - oauth_or_workload_identity
+  - tool_schema_validation
+  - risk_classification
+  - explicit_tool_allowlist
+  - audit
+prohibited:
+  - raw_database_access
+  - unrestricted_filesystem
+  - tenant_secret_read
+  - arbitrary_network_fetch
+  - cross_tenant_data
+  - dynamic_tool_activation_without_review

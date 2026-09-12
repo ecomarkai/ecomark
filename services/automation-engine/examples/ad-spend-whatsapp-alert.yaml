@@ -1,0 +1,29 @@
+version: 1
+id: daily-ad-spend-over-100-sar
+tenant_id: tenant_example
+enabled: false
+trigger:
+  type: ads.spend.threshold_crossed
+  metric: total_ad_spend
+  window: P1D
+  timezone: Asia/Riyadh
+conditions:
+  - field: normalized_currency
+    operator: equals
+    value: SAR
+  - field: normalized_amount
+    operator: greater_than
+    value: 100
+actions:
+  - type: messaging.whatsapp.send
+    connection_id: whatsapp_connection_example
+    recipient_ref: owner_primary_phone
+    template_id: ad_spend_alert
+    variables: [normalized_amount, window_start, window_end]
+safety:
+  once_per_window: true
+  cooldown: PT6H
+  max_actions_per_day: 4
+  deduplication_key: tenant_id:rule_id:window_end
+  require_recipient_consent: true
+  dry_run_before_enable: true

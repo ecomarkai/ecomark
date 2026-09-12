@@ -1,0 +1,22 @@
+version: 1
+id: ecomark-google-ads-bridge
+mode: internal-api-bridge
+source_connector: connectors/advertising/google
+transport: internal
+authentication: service-identity
+tools:
+  read:
+    - ads.accounts.list
+    - ads.campaigns.read
+    - ads.performance.read
+    - ads.recommendations.read
+  propose:
+    - ads.budget.propose
+    - ads.campaign.pause.propose
+  mutate:
+    - ads.budget.update
+    - ads.campaign.pause
+tool_policy:
+  default_effect: deny
+  write_enabled_by_default: false
+  approval_required_for_mutation: true

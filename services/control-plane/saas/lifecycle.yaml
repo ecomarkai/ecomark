@@ -1,0 +1,9 @@
+version: 1
+status: specification
+states: [onboarding, trial, active, past_due, suspended, cancelling, closed]
+onboarding: [create_organization, verify_identity, invite_members, select_plan, connect_store]
+cancellation: [stop_new_jobs, revoke_connections, reconcile_usage, export_window, retention_policy]
+authorization:
+  tenant_from_authenticated_membership: true
+  never_trust_payload_tenant_alone: true
+  recheck_before_external_execution: true

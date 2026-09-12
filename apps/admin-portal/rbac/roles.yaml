@@ -1,0 +1,22 @@
+version: 1
+roles:
+  - super-admin
+  - platform-operator
+  - security-admin
+  - compliance-admin
+  - finance-admin
+  - support-agent
+  - tenant-admin
+  - tenant-analyst
+  - approver
+  - developer
+rules:
+  default_effect: deny
+  tenant_scope_required: true
+  step_up_auth_for_sensitive_actions: true
+  break_glass_is_time_limited: true
+  audit_all_mutations: true
+  separation_of_duties:
+    - secret_admin_cannot_approve_own_action
+    - support_cannot_view_raw_credentials
+    - developer_cannot_disable_audit

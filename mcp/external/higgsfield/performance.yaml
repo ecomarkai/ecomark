@@ -1,0 +1,13 @@
+version: 1
+generation:
+  asynchronous_jobs: true
+  poll_with_backoff: true
+  webhook_completion_preferred: true
+  max_concurrency_per_tenant: 2
+  request_timeout_ms: 120000
+cost:
+  reserve_budget_before_start: true
+  daily_credit_limit_required: true
+resilience:
+  circuit_breaker: true
+  retry_only_safe_operations: true

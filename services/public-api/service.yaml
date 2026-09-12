@@ -1,0 +1,12 @@
+version: 1
+id: public-api
+purpose: "Versioned public REST API, webhooks, keys, quotas and partner access"
+owner: ecomark-platform
+runtime: mixed
+tenancy:
+  isolation_required: true
+observability:
+  logs: true
+  metrics: true
+  traces: true
+slo_file: operations/slo.yaml

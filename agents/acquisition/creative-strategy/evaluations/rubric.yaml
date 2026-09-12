@@ -1,0 +1,6 @@
+version: 1
+criteria:
+  groundedness: 0.30
+  decision_quality: 0.30
+  policy_adherence: 0.25
+  explanation_quality: 0.15

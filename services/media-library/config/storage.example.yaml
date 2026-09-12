@@ -1,0 +1,7 @@
+version: 1
+default_provider: minio
+allowed_providers: [aws-s3, cloudflare-r2, google-cloud-storage, azure-blob, minio]
+tenant_can_bring_bucket: true
+public_objects_allowed: false
+signed_url_ttl_seconds: 300
+object_key_format: "tenants/{tenant_id}/assets/{asset_id}/{version}/{filename}"

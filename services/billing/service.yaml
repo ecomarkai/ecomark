@@ -1,0 +1,19 @@
+version: 1
+id: billing
+purpose: "Subscriptions, entitlements, usage meters, invoices and billing events"
+owner: ecomark-platform
+runtime: mixed
+api:
+  synchronous: true
+events:
+  consumes: []
+  produces: []
+data:
+  owns: []
+tenancy:
+  isolation_required: true
+observability:
+  logs: true
+  metrics: true
+  traces: true
+slo_file: operations/slo.yaml

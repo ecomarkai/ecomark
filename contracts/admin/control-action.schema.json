@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Admin control action","type":"object","required":["action_id","actor_id","scope","command","reason"],"properties":{"action_id":{"type":"string"},"actor_id":{"type":"string"},"scope":{"type":"object"},"command":{"type":"object"},"reason":{"type":"string"},"ticket_ref":{"type":"string"}}}

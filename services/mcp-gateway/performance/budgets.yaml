@@ -1,0 +1,15 @@
+version: 1
+targets:
+  registry_read_p95_ms: 100
+  tool_discovery_p95_ms: 2000
+  cached_read_tool_p95_ms: 800
+  async_action_accept_p95_ms: 500
+defaults:
+  short_read_timeout_ms: 10000
+  long_job_mode: asynchronous
+  connection_pooling: true
+  response_compression: true
+  schema_cache: true
+  tenant_concurrency_limits: true
+  priority_queues: [interactive, automation, background]
+  load_shedding: true

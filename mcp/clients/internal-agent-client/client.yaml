@@ -1,0 +1,4 @@
+version: 1
+id: internal-agent-client
+allowed_servers: [ecomark-commerce, ecomark-media, ecomark-automation]
+credential_mode: workload-identity

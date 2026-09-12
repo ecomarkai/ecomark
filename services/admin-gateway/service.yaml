@@ -1,0 +1,12 @@
+version: 1
+id: admin-gateway
+purpose: "Authenticated administrative aggregation and command routing"
+owner: ecomark-platform
+runtime: typescript
+data:
+  owns: []
+security:
+  direct_database_access: false
+  step_up_auth_for_sensitive_actions: true
+  audit_all_mutations: true
+slo_file: operations/slo.yaml

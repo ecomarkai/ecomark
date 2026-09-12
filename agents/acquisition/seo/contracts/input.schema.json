@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "seo input",
+  "type": "object",
+  "required": ["tenant_id", "store_id", "objective", "as_of"],
+  "properties": {
+    "tenant_id": {"type": "string"},
+    "store_id": {"type": "string"},
+    "objective": {"type": "string"},
+    "as_of": {"type": "string", "format": "date-time"}
+  },
+  "additionalProperties": false
+}

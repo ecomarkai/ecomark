@@ -1,0 +1,14 @@
+version: 1
+read:
+  cache_ttl_seconds: 300
+  query_batching: true
+  incremental_checkpoints: true
+write:
+  asynchronous: true
+  idempotency: required
+  approval: required
+resilience:
+  distributed_rate_limits: true
+  exponential_backoff: true
+  circuit_breaker: true
+  dead_letter_queue: true

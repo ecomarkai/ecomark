@@ -1,0 +1,7 @@
+version: 1
+id: web-dashboard
+owner: ecomark-product
+purpose: "Merchant dashboard, onboarding, insights, approvals and AI chat"
+runtime: typescript
+tenancy: required
+observability: enabled

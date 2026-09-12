@@ -1,0 +1,12 @@
+version: 1
+status: example_requires_business_configuration
+primary_metric: contribution_profit
+secondary_metrics: [cpa, ctr, conversion_rate]
+comparison: concurrent_control_when_supported
+minimum_sample_size: null
+measurement_window: null
+attribution_window: null
+stop_loss_amount: null
+currency: SAR
+on_missing_design: do_not_launch
+outcomes: [positive, negative, inconclusive]

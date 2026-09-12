@@ -1,0 +1,29 @@
+version: 1
+id: higgsfield
+tenant_id: tenant_example
+enabled: false
+mode: remote-mcp
+transport: streamable-http
+endpoint_secret_ref: secret://tenant/higgsfield/mcp-endpoint
+authentication:
+  type: oauth2
+  credential_secret_ref: secret://tenant/higgsfield/oauth
+trust:
+  vendor: Higgsfield
+  official_endpoint_required: true
+  endpoint_allowlisted: false
+  tls_required: true
+tool_policy:
+  discovery: quarantine
+  default_effect: deny
+  allow: []
+limits:
+  request_timeout_ms: 120000
+  max_concurrency: 2
+  requests_per_minute: 10
+  daily_credit_limit: 100
+safety:
+  human_approval_for_generation: configurable
+  audit_all_calls: true
+  approved_media_inputs_only: true
+  import_outputs_to_media_library: true

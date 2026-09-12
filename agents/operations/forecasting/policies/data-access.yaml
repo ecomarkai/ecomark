@@ -1,0 +1,3 @@
+version: 1
+agent: forecasting
+default_effect: deny

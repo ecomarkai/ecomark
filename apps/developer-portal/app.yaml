@@ -1,0 +1,7 @@
+version: 1
+id: developer-portal
+owner: ecomark-product
+purpose: "API keys, webhooks, SDK docs and partner onboarding"
+runtime: typescript
+tenancy: required
+observability: enabled

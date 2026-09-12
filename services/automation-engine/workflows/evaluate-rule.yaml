@@ -1,0 +1,11 @@
+version: 1
+steps:
+  - load_tenant_rule
+  - validate_event_freshness
+  - evaluate_conditions
+  - check_cooldown_and_deduplication
+  - evaluate_policy
+  - create_action_jobs
+  - execute_actions
+  - verify_delivery
+  - write_audit_and_run_history

@@ -1,0 +1,6 @@
+version: 1
+id: ecomark-automation
+transport: [streamable-http]
+authentication: oauth-2.1
+tenant_context_required: true
+tool_groups: [automation-read, automation-manage, automation-run]

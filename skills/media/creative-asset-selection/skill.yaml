@@ -1,0 +1,9 @@
+version: 1
+id: creative-asset-selection
+display_name: Creative asset selection
+status: planned
+compatible_agents: [creative-strategy, media-buyer]
+required_capabilities: [media.assets.search, media.assets.read_metadata]
+permissions: [read, recommend]
+risk: low
+entrypoint: SKILL.md

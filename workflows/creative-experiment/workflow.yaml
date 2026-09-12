@@ -1,0 +1,55 @@
+version: 1
+id: creative-experiment
+status: specification
+enabled: false
+initial: draft_brief
+states:
+  draft_brief:
+    owner: creative-strategy
+    next: approve_generation
+  approve_generation:
+    owner: approval
+    next: reserve_budget
+  reserve_budget:
+    owner: billing
+    next: submit_generation
+  submit_generation:
+    owner: mcp-gateway
+    next: await_generation
+    ambiguous_result: reconcile
+  reconcile:
+    owner: execution
+    next: await_generation
+    unresolved: manual_review
+  await_generation:
+    owner: execution
+    next: import_asset
+  import_asset:
+    owner: media-library
+    next: review_asset
+  review_asset:
+    owner: approval
+    next: prepare_ad_draft
+  prepare_ad_draft:
+    owner: media-buyer
+    next: approve_ad_spend
+  approve_ad_spend:
+    owner: approval
+    next: publish_test
+  publish_test:
+    owner: execution
+    next: measure
+  measure:
+    owner: experiment
+    next: record_learning
+  record_learning:
+    owner: experiment
+    next: completed
+  manual_review:
+    terminal: true
+  completed:
+    terminal: true
+on_rejection: cancelled
+on_revocation: cancelled
+on_failure: failed
+terminal_states: [cancelled, failed]

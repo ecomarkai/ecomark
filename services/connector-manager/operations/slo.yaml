@@ -1,0 +1,3 @@
+version: 1
+service: connector-manager
+availability_target: 99.9

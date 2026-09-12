@@ -1,0 +1,6 @@
+version: 1
+release:
+  policy_adherence: 1.0
+  tenant_isolation: 1.0
+  groundedness: 0.95
+  tool_selection: 0.95

@@ -1,0 +1,13 @@
+version: 1
+steps:
+  - register_metadata
+  - verify_official_endpoint
+  - configure_auth
+  - test_tls_and_transport
+  - discover_tools_into_quarantine
+  - validate_schemas
+  - classify_tool_risk
+  - admin_select_allowlist
+  - run_sandbox_tests
+  - approve_and_activate
+  - monitor_health_cost_and_changes

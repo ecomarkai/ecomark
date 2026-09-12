@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ecomark capability",
+  "type": "object",
+  "required": ["id", "version", "risk", "input_schema", "output_schema"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z]+(\\.[a-z-]+)+$"},
+    "version": {"type": "integer", "minimum": 1},
+    "risk": {"enum": ["read", "recommend", "mutate", "financial", "destructive"]},
+    "input_schema": {"type": "string"},
+    "output_schema": {"type": "string"},
+    "idempotency_required": {"type": "boolean"},
+    "approval_required": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}

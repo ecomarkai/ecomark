@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Automation run","type":"object","required":["run_id","rule_id","tenant_id","status"],"properties":{"run_id":{"type":"string"},"rule_id":{"type":"string"},"tenant_id":{"type":"string"},"status":{"enum":["queued","running","succeeded","failed","suppressed"]}}}

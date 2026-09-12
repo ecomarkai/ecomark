@@ -1,0 +1,10 @@
+version: 1
+agent: creative-strategy
+limits:
+  maximum_financial_change_percent: 0
+  maximum_daily_amount: 0
+  prohibited_without_approval:
+    - destructive_action
+    - irreversible_action
+    - customer_message
+    - price_or_budget_change

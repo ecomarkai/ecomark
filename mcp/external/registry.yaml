@@ -1,0 +1,8 @@
+version: 1
+providers:
+  - id: higgsfield
+    mode: remote-mcp
+    path: higgsfield
+  - id: google-ads
+    mode: internal-api-bridge
+    path: google-ads

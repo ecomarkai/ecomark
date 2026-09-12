@@ -1,0 +1,4 @@
+version: 1
+on_tool_failure: retry_then_pause
+on_verification_failure: rollback_if_supported
+on_policy_denial: stop

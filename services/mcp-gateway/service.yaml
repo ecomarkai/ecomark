@@ -1,0 +1,12 @@
+version: 1
+id: mcp-gateway
+purpose: "MCP authentication, discovery, tool exposure, sessions and audit"
+owner: ecomark-platform
+runtime: mixed
+tenancy:
+  isolation_required: true
+observability:
+  logs: true
+  metrics: true
+  traces: true
+slo_file: operations/slo.yaml

@@ -1,0 +1,37 @@
+version: 1
+families:
+  commerce:
+    - salla
+    - zid
+    - shopify
+    - woocommerce
+    - magento
+    - bigcommerce
+  advertising:
+    - meta
+    - google
+    - tiktok
+    - snapchat
+    - microsoft-ads
+  analytics-seo:
+    - ga4
+    - search-console
+    - bing-webmaster
+  communications-crm:
+    - whatsapp
+    - email
+    - sms
+    - hubspot
+    - salesforce
+    - klaviyo
+  operations:
+    - payments
+    - shipping
+    - erp
+    - accounting
+    - inventory
+  support:
+    - zendesk
+    - intercom
+    - freshdesk
+

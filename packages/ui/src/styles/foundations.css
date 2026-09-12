@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ui-color-canvas);
+  color: var(--ui-color-text);
+  font-family: var(--ui-font-sans);
+}
+
+html:lang(ar) {
+  font-family: var(--ui-font-arabic);
+}
+
+body {
+  background: var(--ui-color-canvas);
+  color: var(--ui-color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ui-motion-duration-fast: 1ms;
+    --ui-motion-duration-normal: 1ms;
+    --ui-motion-duration-slow: 1ms;
+  }
+}

@@ -1,0 +1,2 @@
+version: 1
+steps: [validate, malware_scan, probe, thumbnails, transcription, scenes, embeddings, index]

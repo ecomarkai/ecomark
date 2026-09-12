@@ -1,0 +1,3 @@
+version: 1
+agent: retention
+default_effect: deny

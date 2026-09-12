@@ -1,0 +1,16 @@
+version: 1
+id: erp
+family: operations
+status: planned
+owner: ecomark-integrations
+runtime: python
+auth:
+  strategy: vendor_specific
+sync:
+  incremental: true
+  checkpointed: true
+webhooks:
+  verify: true
+  deduplicate: true
+commands:
+  idempotent: true

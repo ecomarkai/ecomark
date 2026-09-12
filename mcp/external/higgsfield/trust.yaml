@@ -1,0 +1,13 @@
+version: 1
+vendor: Higgsfield
+official_domain_allowlist:
+  - higgsfield.ai
+endpoint:
+  configured_from_verified_preset: true
+  tenant_editable: false
+tool_discovery:
+  new_tools_start_in_quarantine: true
+  schema_change_disables_tool: true
+outputs:
+  import_to_tenant_media_library: true
+  scan_before_use: true

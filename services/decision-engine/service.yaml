@@ -1,0 +1,19 @@
+version: 1
+id: decision-engine
+purpose: "Rules, statistics and model-supported decision candidates"
+owner: ecomark-platform
+runtime: mixed
+api:
+  synchronous: true
+events:
+  consumes: []
+  produces: []
+data:
+  owns: []
+tenancy:
+  isolation_required: true
+observability:
+  logs: true
+  metrics: true
+  traces: true
+slo_file: operations/slo.yaml

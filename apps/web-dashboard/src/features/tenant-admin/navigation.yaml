@@ -1,0 +1,13 @@
+version: 1
+sections:
+  - business-overview
+  - team-and-roles
+  - integrations
+  - mcp-and-api
+  - agents-and-skills
+  - automations
+  - media-library
+  - approvals
+  - usage-and-billing
+  - audit
+  - settings

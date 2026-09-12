@@ -1,0 +1,4 @@
+version: 1
+id: approvals.request.create
+risk: low
+idempotency_required: true

@@ -1,0 +1,14 @@
+version: 1
+status: specification
+meters: [stores, seats, mcp_calls, generation_credits, automation_runs, storage_bytes]
+plan_limits_source: versioned_billing_catalog
+enforcement: server_side
+reservations:
+  before_paid_job: true
+  atomic_per_tenant: true
+  reconcile_actual_cost: true
+webhooks:
+  verify_signature: true
+  deduplicate_event: true
+  handle_out_of_order: true
+  reconcile_provider_state: true

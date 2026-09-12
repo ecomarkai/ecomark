@@ -1,0 +1,21 @@
+version: 1
+id: growth-director
+family: orchestration
+status: planned
+purpose: "Plans cross-agent work and owns business outcomes"
+owner: ecomark-eco
+runtime: python
+entrypoint: src.agent:Agent
+autonomy:
+  maximum: approval
+  default: recommend
+contracts:
+  input: contracts/input.schema.json
+  output: contracts/output.schema.json
+capabilities_file: tools/capability-bindings.yaml
+policy_directory: policies
+evaluation_directory: evaluations
+observability:
+  traces: true
+  decision_events: true
+  cost_tracking: true

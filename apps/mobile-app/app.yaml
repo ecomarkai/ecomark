@@ -1,0 +1,6 @@
+version: 1
+id: mobile-app
+owner: ecomark-product
+runtime: react-native-expo
+status: future
+features: [alerts, approvals, insights, ai-chat, automation-runs, media-preview]

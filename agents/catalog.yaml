@@ -1,0 +1,78 @@
+version: 1
+agents:
+  - id: growth-director
+    path: orchestration/growth-director
+    family: orchestration
+    rollout_stage: foundation
+    maximum_autonomy: approval
+  - id: research
+    path: acquisition/research
+    family: acquisition
+    rollout_stage: growth
+    maximum_autonomy: recommend
+  - id: seo
+    path: acquisition/seo
+    family: acquisition
+    rollout_stage: growth
+    maximum_autonomy: approval
+  - id: media-buyer
+    path: acquisition/media-buyer
+    family: acquisition
+    rollout_stage: foundation
+    maximum_autonomy: approval
+  - id: creative-strategy
+    path: acquisition/creative-strategy
+    family: acquisition
+    rollout_stage: growth
+    maximum_autonomy: recommend
+  - id: cro
+    path: conversion/cro
+    family: conversion
+    rollout_stage: expansion
+    maximum_autonomy: approval
+  - id: merchandising
+    path: conversion/merchandising
+    family: conversion
+    rollout_stage: expansion
+    maximum_autonomy: approval
+  - id: pricing-promotion
+    path: conversion/pricing-promotion
+    family: conversion
+    rollout_stage: expansion
+    maximum_autonomy: approval
+  - id: crm
+    path: retention/crm
+    family: retention
+    rollout_stage: expansion
+    maximum_autonomy: approval
+  - id: retention
+    path: retention/retention
+    family: retention
+    rollout_stage: growth
+    maximum_autonomy: approval
+  - id: customer-support-intelligence
+    path: retention/customer-support-intelligence
+    family: retention
+    rollout_stage: expansion
+    maximum_autonomy: recommend
+  - id: analytics
+    path: operations/analytics
+    family: operations
+    rollout_stage: foundation
+    maximum_autonomy: recommend
+  - id: profit
+    path: operations/profit
+    family: operations
+    rollout_stage: foundation
+    maximum_autonomy: recommend
+  - id: inventory
+    path: operations/inventory
+    family: operations
+    rollout_stage: growth
+    maximum_autonomy: approval
+  - id: forecasting
+    path: operations/forecasting
+    family: operations
+    rollout_stage: expansion
+    maximum_autonomy: recommend
+

@@ -1,0 +1,15 @@
+version: 1
+switches:
+  - global-agent-execution
+  - tenant-agent-execution
+  - external-mcp-server
+  - individual-mcp-tool
+  - connector-write-actions
+  - automation-actions
+  - model-provider
+  - media-generation
+requirements:
+  reason: true
+  step_up_auth: true
+  audit: true
+  reversible: true

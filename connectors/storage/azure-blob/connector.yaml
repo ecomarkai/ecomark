@@ -1,0 +1,8 @@
+version: 1
+id: azure-blob
+family: storage
+display_name: Azure Blob Storage
+status: planned
+capabilities: [object.put, object.read, object.head, object.copy, object.delete, signed_url.create]
+credentials: secrets_manager_reference
+tenant_scoped_prefix: required

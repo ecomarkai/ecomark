@@ -1,0 +1,5 @@
+version: 1
+id: messaging.email.send
+risk: medium
+requirements: [recipient_policy, rate_limit, audit]
+idempotency_required: true

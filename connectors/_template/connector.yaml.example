@@ -1,0 +1,25 @@
+name: example-connector
+family: commerce
+version: 0.1.0
+owner: integration-platform
+authentication:
+  type: oauth2
+  minimum_scopes: []
+capabilities:
+  reads: []
+  commands: []
+  events: []
+operations:
+  quotas_documented: false
+  supports_backfill: false
+  supports_reconciliation: false
+  idempotency_strategy: required
+  replay_strategy: required
+security:
+  data_classification: confidential
+  secrets_manager_required: true
+  webhook_signature_required: true
+compatibility:
+  provider_api_versions: []
+  deprecation_date: null
+

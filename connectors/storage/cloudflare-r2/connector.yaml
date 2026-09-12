@@ -1,0 +1,8 @@
+version: 1
+id: cloudflare-r2
+family: storage
+display_name: Cloudflare R2
+status: planned
+capabilities: [object.put, object.read, object.head, object.copy, object.delete, signed_url.create]
+credentials: secrets_manager_reference
+tenant_scoped_prefix: required

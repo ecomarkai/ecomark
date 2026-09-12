@@ -1,0 +1,7 @@
+version: 1
+id: api-gateway
+owner: ecomark-product
+purpose: "Public API edge, auth, quotas and routing"
+runtime: typescript
+tenancy: required
+observability: enabled

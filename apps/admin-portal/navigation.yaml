@@ -1,0 +1,10 @@
+version: 1
+sections:
+  - platform
+  - customers
+  - intelligence
+  - integrations
+  - operations
+  - trust
+  - finance
+  - settings

@@ -1,0 +1,9 @@
+version: 1
+id: pricing-experiment
+display_name: Pricing experiment
+status: planned
+compatible_agents: [pricing-promotion, profit]
+required_capabilities: [commerce.catalog.read, commerce.price.propose, finance.margin.read]
+permissions: [recommend, propose]
+risk: financial
+entrypoint: SKILL.md

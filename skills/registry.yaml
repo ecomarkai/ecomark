@@ -1,0 +1,12 @@
+version: 1
+skills:
+  - id: paid-media-audit
+    path: acquisition/paid-media-audit
+  - id: seo-content-plan
+    path: acquisition/seo-content-plan
+  - id: pricing-experiment
+    path: conversion/pricing-experiment
+  - id: whatsapp-spend-alert
+    path: automation/whatsapp-spend-alert
+  - id: creative-asset-selection
+    path: media/creative-asset-selection

@@ -1,0 +1,6 @@
+version: 1
+agent: seo
+default_effect: deny
+read: []
+propose: []
+execute: []

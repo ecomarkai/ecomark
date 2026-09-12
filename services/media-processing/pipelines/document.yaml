@@ -1,0 +1,2 @@
+version: 1
+steps: [validate, malware_scan, extract_text, ocr_if_needed, embeddings, index]

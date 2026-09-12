@@ -1,0 +1,6 @@
+version: 1
+agent: media-buyer
+default_effect: deny
+read: []
+propose: []
+execute: []

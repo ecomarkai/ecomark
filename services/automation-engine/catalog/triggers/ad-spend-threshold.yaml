@@ -1,0 +1,5 @@
+version: 1
+id: ads.spend.threshold_crossed
+source_event: ads.spend.updated
+required_fields: [account_id, amount, currency, window_start, window_end]
+supports: [hourly, daily, rolling]

@@ -1,0 +1,11 @@
+version: 1
+servers:
+  - id: ecomark-commerce
+    path: servers/ecomark-commerce
+  - id: ecomark-media
+    path: servers/ecomark-media
+  - id: ecomark-automation
+    path: servers/ecomark-automation
+clients:
+  - id: internal-agent-client
+    path: clients/internal-agent-client

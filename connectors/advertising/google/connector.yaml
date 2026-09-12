@@ -1,0 +1,31 @@
+version: 1
+id: google
+family: advertising
+status: planned
+owner: ecomark-integrations
+runtime: python
+auth:
+  strategy: oauth2_multi_user
+  oauth_scope: https://www.googleapis.com/auth/adwords
+  developer_token: secret_reference
+  refresh_token: tenant_secret_reference
+  manager_customer_id: optional
+  customer_id: required
+api:
+  version: pinned_in_configuration
+  upgrade_tests_required: true
+sync:
+  incremental: true
+  checkpointed: true
+webhooks:
+  verify: true
+  deduplicate: true
+commands:
+  idempotent: true
+  write_enabled_by_default: false
+  approval_required: true
+performance:
+  query_batching: true
+  distributed_rate_limits: true
+  read_cache_ttl_seconds: 300
+  asynchronous_mutations: true

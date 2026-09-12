@@ -1,0 +1,11 @@
+version: 1
+id: example-skill
+display_name: Example skill
+status: draft
+owners: [ecomark-eco]
+compatible_agents: []
+required_capabilities: []
+optional_capabilities: []
+permissions: []
+risk: low
+entrypoint: SKILL.md

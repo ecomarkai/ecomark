@@ -1,0 +1,2 @@
+version: 1
+providers: [aws-s3, cloudflare-r2, google-cloud-storage, azure-blob, minio]

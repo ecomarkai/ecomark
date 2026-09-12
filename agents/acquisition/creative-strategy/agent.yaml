@@ -1,0 +1,21 @@
+version: 1
+id: creative-strategy
+family: acquisition
+status: planned
+purpose: "Generates evidence-based creative strategy and briefs"
+owner: ecomark-eco
+runtime: python
+entrypoint: src.agent:Agent
+autonomy:
+  maximum: recommend
+  default: recommend
+contracts:
+  input: contracts/input.schema.json
+  output: contracts/output.schema.json
+capabilities_file: tools/capability-bindings.yaml
+policy_directory: policies
+evaluation_directory: evaluations
+observability:
+  traces: true
+  decision_events: true
+  cost_tracking: true

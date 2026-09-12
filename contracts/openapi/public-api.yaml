@@ -1,0 +1,25 @@
+openapi: 3.1.0
+info:
+  title: Ecomark Public API
+  version: 1.0.0
+servers:
+  - url: https://api.ecomark.ai/v1
+paths:
+  /stores:
+    get:
+      operationId: listStores
+      responses:
+        "200":
+          description: Tenant-scoped stores
+  /automations:
+    get:
+      operationId: listAutomations
+      responses:
+        "200":
+          description: Tenant-scoped automation rules
+  /media/assets:
+    get:
+      operationId: searchMediaAssets
+      responses:
+        "200":
+          description: Tenant-scoped media assets

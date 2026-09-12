@@ -1,0 +1,12 @@
+version: 1
+name: growth-director-main
+steps:
+  - collect_context
+  - validate_freshness
+  - analyze
+  - create_proposal
+  - policy_check
+  - request_approval_if_required
+  - execute_if_authorized
+  - verify
+  - record_learning

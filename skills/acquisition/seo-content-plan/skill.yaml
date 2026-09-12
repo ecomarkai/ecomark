@@ -1,0 +1,9 @@
+version: 1
+id: seo-content-plan
+display_name: SEO content plan
+status: planned
+compatible_agents: [seo, research]
+required_capabilities: [seo.performance.read, commerce.catalog.read]
+permissions: [recommend]
+risk: low
+entrypoint: SKILL.md

@@ -1,0 +1,3 @@
+version: 1
+id: schedule.cron
+required_fields: [cron, timezone]

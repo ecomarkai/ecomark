@@ -1,0 +1,6 @@
+version: 1
+agent: pricing-promotion
+default_effect: deny
+read: []
+propose: []
+execute: []

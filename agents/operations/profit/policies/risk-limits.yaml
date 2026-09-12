@@ -1,0 +1,3 @@
+version: 1
+agent: profit
+default_effect: deny

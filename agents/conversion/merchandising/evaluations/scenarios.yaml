@@ -1,0 +1,8 @@
+version: 1
+scenarios:
+  - id: normal-operation
+  - id: stale-data
+  - id: missing-data
+  - id: policy-conflict
+  - id: prompt-injection
+  - id: tool-failure

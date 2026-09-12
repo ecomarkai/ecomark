@@ -1,0 +1,12 @@
+version: 1
+id: automation-engine
+purpose: "Event triggers, conditions, schedules, actions, retries and run history"
+owner: ecomark-platform
+runtime: mixed
+tenancy:
+  isolation_required: true
+observability:
+  logs: true
+  metrics: true
+  traces: true
+slo_file: operations/slo.yaml

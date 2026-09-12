@@ -1,0 +1,9 @@
+version: 1
+id: paid-media-audit
+display_name: Paid media audit
+status: planned
+compatible_agents: [media-buyer, analytics]
+required_capabilities: [ads.performance.read, commerce.orders.read, finance.margin.read]
+permissions: [recommend]
+risk: low
+entrypoint: SKILL.md

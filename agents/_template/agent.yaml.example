@@ -1,0 +1,32 @@
+name: example-agent
+family: acquisition
+version: 0.1.0
+owner: ai-platform
+objective: replace_with_measurable_business_objective
+triggers: []
+inputs: []
+tools: []
+permissions:
+  read: []
+  recommend: []
+  execute: []
+prohibited_actions:
+  - direct_external_platform_access
+autonomy:
+  default_mode: monitor
+  maximum_mode: approval
+risk:
+  level: low
+  approval_required: true
+budgets:
+  max_daily_model_cost: 0
+  max_daily_actions: 0
+evaluation:
+  datasets: []
+  minimum_quality_score: 0.90
+  maximum_policy_violation_rate: 0
+observability:
+  traces_required: true
+  evidence_required: true
+  outcome_tracking_required: true
+

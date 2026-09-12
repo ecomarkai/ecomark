@@ -1,0 +1,3 @@
+version: 1
+id: commerce.event
+supported_events: [order.created, order.refunded, inventory.low, customer.inactive]

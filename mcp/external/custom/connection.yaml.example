@@ -1,0 +1,12 @@
+version: 1
+id: custom-provider-example
+tenant_id: tenant_example
+enabled: false
+endpoint: https://mcp.example.invalid/mcp
+transport: streamable-http
+auth_mode: oauth
+credential_ref: secret://tenant_example/connection_example
+approved_egress_hosts: []
+discovered_tools: []
+approved_tools: []
+state: draft

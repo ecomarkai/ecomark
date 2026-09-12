@@ -1,0 +1,2 @@
+version: 1
+steps: [validate, malware_scan, extract_metadata, thumbnails, vision_labels, embeddings, index]

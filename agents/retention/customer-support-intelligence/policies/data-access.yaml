@@ -1,0 +1,3 @@
+version: 1
+agent: customer-support-intelligence
+default_effect: deny

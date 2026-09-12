@@ -1,0 +1,1 @@
+"""Idempotent canonical command execution."""

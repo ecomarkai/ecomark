@@ -1,0 +1,6 @@
+version: 1
+id: ecomark-media
+transport: [streamable-http]
+authentication: oauth-2.1
+tenant_context_required: true
+tool_groups: [media-search, media-metadata, media-selection]

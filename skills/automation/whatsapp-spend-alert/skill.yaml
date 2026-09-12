@@ -1,0 +1,9 @@
+version: 1
+id: whatsapp-spend-alert
+display_name: WhatsApp spend alert
+status: planned
+compatible_agents: [growth-director, media-buyer]
+required_capabilities: [ads.spend.read, automation.rule.create, messaging.whatsapp.send]
+permissions: [propose]
+risk: medium
+entrypoint: SKILL.md

@@ -1,0 +1,11 @@
+version: 1
+agent: growth-director
+rules:
+  - risk: low
+    action: recommend
+  - risk: medium
+    action: require_approval
+  - risk: high
+    action: require_two_person_approval
+  - risk: critical
+    action: deny

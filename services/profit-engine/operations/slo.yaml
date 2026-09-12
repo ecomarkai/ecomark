@@ -1,0 +1,3 @@
+version: 1
+service: profit-engine
+availability_target: 99.9

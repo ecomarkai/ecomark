@@ -1,0 +1,23 @@
+version: 1
+id: zid
+family: commerce
+status: planned
+owner: ecomark-integrations
+runtime: python
+entrypoint: src.connector:Connector
+auth:
+  strategy: vendor_specific
+sync:
+  incremental: true
+  backfill: true
+  checkpoints: true
+webhooks:
+  verification_required: true
+  deduplication_required: true
+commands:
+  idempotency_required: true
+rate_limits:
+  distributed: true
+observability:
+  health: true
+  data_freshness: true

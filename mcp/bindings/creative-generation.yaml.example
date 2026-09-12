@@ -1,0 +1,17 @@
+version: 1
+binding_id: creative-generation-example
+tenant_id: tenant_example
+agent_id: creative-strategy
+connection_id: higgsfield-example
+capability: creative.generate
+vendor_tool_name: REPLACE_AFTER_DISCOVERY
+tool_schema_digest: REPLACE_AFTER_REVIEW
+enabled: false
+input_mapping:
+  brief: REPLACE_WITH_VENDOR_INPUT_FIELD
+output_mapping:
+  job_id: REPLACE_WITH_VENDOR_JOB_FIELD
+permissions:
+  approved_media_only: true
+  generation_budget_required: true
+  may_publish_ads: false

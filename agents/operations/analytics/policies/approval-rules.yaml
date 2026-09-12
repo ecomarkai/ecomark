@@ -1,0 +1,3 @@
+version: 1
+agent: analytics
+default_effect: deny

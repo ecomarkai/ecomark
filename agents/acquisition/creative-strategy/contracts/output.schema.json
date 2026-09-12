@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "creative-strategy proposal",
+  "type": "object",
+  "required": ["proposal_id", "evidence", "confidence", "risk"],
+  "properties": {
+    "proposal_id": {"type": "string"},
+    "evidence": {"type": "array", "items": {"type": "object"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "risk": {"enum": ["low", "medium", "high", "critical"]}
+  }
+}

@@ -1,0 +1,5 @@
+version: 1
+id: messaging.whatsapp.send
+risk: medium
+requirements: [recipient_consent, approved_template, rate_limit, audit]
+idempotency_required: true

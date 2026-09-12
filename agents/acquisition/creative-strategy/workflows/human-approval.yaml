@@ -1,0 +1,4 @@
+version: 1
+timeout: PT24H
+on_timeout: cancel
+require_reason_for_rejection: true

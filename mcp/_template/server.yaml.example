@@ -1,0 +1,8 @@
+version: 1
+id: example-server
+transport: [streamable-http]
+authentication: oauth-2.1
+tenant_context_required: true
+tools: []
+resources: []
+prompts: []
