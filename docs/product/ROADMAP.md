@@ -17,7 +17,7 @@ weekly while delivery is active.
 **Overall verdict: useful architecture reference, but not an implementation-ready Ecomark baseline.**
 The repository has a strong tenant-security model, ownership documentation, agent governance, testing
 requirements, recovery planning, and a generated Next.js shell whose current lint and typecheck pass.
-However, its current `ecomark`/`ECO` naming, `apps/web-dashboard` path, 27 proposed service
+However, its 27 proposed service
 directories, split contract locations, Kubernetes-first infrastructure shape, agent migration folders,
 and extensive future scope do not match the approved Ecomark starting architecture. It does not yet
 provide the Account → Organization → Store → Shopify connection → Data sync → Dashboard → AI analysis
@@ -57,7 +57,7 @@ Use only these states in delivery reviews:
 |---|---|---|---|
 | Product definition | In progress | MVP journey, requirements, feature catalog, and sequencing are clear | Approved success baselines and delivery estimates |
 | Repository/tooling | In progress | Legacy workspace and dashboard lint/typecheck work on the validated runtime; ECO-001A is incomplete | Approved Ecomark paths, reproducible install, lint, typecheck, build, and joint service startup |
-| Web experience | In progress | Generated shell exists at legacy `apps/web-dashboard`; target path is `apps/web` | Move without regeneration; first bilingual, accessible onboarding slice with component tests |
+| Web experience | In progress | Generated shell is normalized to `apps/web`; product screens are not implemented | First bilingual, accessible onboarding slice with component tests |
 | Identity and tenancy | Not started | Security rules are documented | Runtime auth, memberships, server-derived tenant context, negative isolation tests |
 | Shopify and ingestion | Not started | Connector boundaries are documented | OAuth, durable sync, replay, reconciliation, and webhook evidence |
 | Metrics/dashboard | Not started | Metric requirements and truthful-state rules are documented | Canonical data, provenance, freshness, exact fixture reconciliation |

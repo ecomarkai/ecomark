@@ -7,8 +7,8 @@ Owner: Product Engineering. This specializes the repository [testing strategy](.
 Run from the repository root with pnpm 10.0.0:
 
 ```bash
-pnpm --filter web-dashboard lint
-pnpm --filter web-dashboard typecheck
+pnpm --filter @ecomarkai/web lint
+pnpm --filter @ecomarkai/web typecheck
 ```
 
 The dashboard currently has no `test` script or configured component, end-to-end, accessibility, or visual-regression runner. A Turbo test command with no participating dashboard task is not a pass. Establish runners and deterministic sanitized fixtures in an explicitly scoped implementation before claiming the affected journey release-ready.

@@ -23,11 +23,11 @@ Cross-service `tests/` directories and `packages/ui` are planned homes and curre
 
 ## Execution gates
 
-1. Run affected lint and typecheck after every implementation. For the current dashboard use root commands `pnpm --filter web-dashboard lint` and `pnpm --filter web-dashboard typecheck`.
+1. Run affected lint and typecheck after every implementation. For the current web application use root commands `pnpm --filter @ecomarkai/web lint` and `pnpm --filter @ecomarkai/web typecheck`.
 2. Run all suites in the matrix that match changed behavior. Unit tests cannot replace tenant-isolation, E2E or provider contract tests. Changes to shared code require checks of affected consumers through Turbo.
 3. Before release run the complete implemented initial journey in both locales and directions, both themes and [responsive viewports](../design/RESPONSIVE_DESIGN.md). Include permission denial, sync interruption and insufficient analysis evidence.
 4. Use sanitized deterministic fixtures for repeatable checks; provider sandbox tests are separate, credential-controlled and must not spend or publish without explicit authorization. Never use production customer data in snapshots.
 5. Every security/isolation negative case must deny access and prove no forbidden data or external action escaped. Financial fixtures must reconcile exactly under their documented rounding policy. Agent evaluation thresholds must be versioned and approved before comparing a candidate, never lowered after a failure to make it pass.
 6. Record command, environment/runtime, revision or worktree state, suite/case count, outcome and evidence location. A skipped, flaky or missing suite is not passed; assign an owner and block affected release claims until resolved.
 
-For documentation-only work, validate local links, index coverage, requirement consistency and complete diff; no application rerun is required when code/configuration is untouched. Scaffold syntax validation proves only syntax/references, not product correctness. [Dashboard testing](../../apps/web-dashboard/TESTING.md) applies these rules locally.
+For documentation-only work, validate local links, index coverage, requirement consistency and complete diff; no application rerun is required when code/configuration is untouched. Scaffold syntax validation proves only syntax/references, not product correctness. [Web application testing](../../apps/web/TESTING.md) applies these rules locally.

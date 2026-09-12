@@ -20,7 +20,7 @@ Owner: change author. Include this checklist or an equivalent evidence table in 
 - [ ] Lint, typecheck and relevant suites passed with exact commands and outcomes.
 - [ ] Missing/flaky/skipped checks listed with owner, impact and release implications.
 - [ ] Operational owner, observability, budgets and runbook updated where affected.
-- [ ] Documentation links and [index](../../FILE_INDEX.md) validated.
+- [ ] Documentation links and the current [repository file map](../architecture/REPOSITORY_FILE_MAP.md) validated.
 - [ ] Complete diff, including new files, reviewed; no unauthorized commit or destructive action.
 
 A Not applicable entry must explain why the change does not touch that surface. Documentation-only work uses the narrower gate in [definition of done](DEFINITION_OF_DONE.md). See [testing strategy](../engineering/TESTING_STRATEGY.md) for required coverage; do not replace it with blanket “tests passed.”

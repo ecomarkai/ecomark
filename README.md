@@ -1,9 +1,20 @@
-# Ecomark SaaS — architecture scaffold
+# Ecomark
 
-Multi-tenant commerce platform design. This repository contains specifications and placeholders, not a running or acquisition-ready product. Capacity and security require implementation and validation.
+Ecomark is an AI-native commerce growth, intelligence, and governed automation platform.
+
+Ecomark is the platform. ECO is the intelligence inside it.
+
+**ECO — E-commerce Growth Operator**
+
+**Connect → Understand → Decide → Act → Learn**
+
+This repository currently contains a multi-tenant commerce architecture scaffold, a generated web
+shell, and a small shared UI foundation. It is not yet a running or acquisition-ready product. Capacity,
+security, and ECO quality require implementation and measured validation.
 
 Start with the [documentation index](docs/README.md), [implementation status](IMPLEMENTATION_STATUS.md),
-and [historical scaffold inventory](FILE_INDEX.md). English is authoritative for new and actively
+the [AI repository guide](AI_REPOSITORY_GUIDE.md), and the
+[current per-file inventory](docs/architecture/REPOSITORY_FILE_MAP.md). English is authoritative for new and actively
 maintained engineering documentation. [START_HERE_AR.md](START_HERE_AR.md) and other Arabic documents
 remain historical onboarding references; they do not override current English engineering standards
 or the canonical [product roadmap](docs/product/ROADMAP.md). The distributable archive extracts to
@@ -43,7 +54,7 @@ or the canonical [product roadmap](docs/product/ROADMAP.md). The distributable a
 8. The operational database is the source of truth; graph and analytics stores are rebuildable projections.
 9. Observability, security, data lineage, and AI evaluations are product requirements.
 10. Start as a modular monolith and extract services only when scale, ownership, or isolation requires it.
-11. Contract definitions live in `contracts`; generated clients may live in `packages`, but handwritten duplicates are prohibited.
+11. Contract definitions currently live in `contracts`; ECO-001A migrates authority atomically to `packages/contracts`. Generated clients may live in other packages, but handwritten duplicates are prohibited.
 12. Every deployable component has an owner, SLO, runbook, data classification, cost center, and deprecation policy.
 13. Scale is measured by events, orders, API quotas, workflows, and data volume—not only registered users.
 14. Production changes are reproducible, reviewed, observable, and reversible.

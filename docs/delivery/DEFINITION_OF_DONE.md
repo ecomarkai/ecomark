@@ -16,6 +16,10 @@ Owner: change author and accountable reviewer. [CONTRIBUTING.md](../../CONTRIBUT
 
 ## Documentation-only gate
 
-Inspect existing documents and references first. New requirements must distinguish planned behavior from verified capabilities and avoid duplicating authoritative documents. Validate internal links, discovery from [FILE_INDEX.md](../../FILE_INDEX.md), instruction consistency and Markdown diff whitespace. Prove application/configuration files were not altered by the documentation task. Application tests need not be rerun for prose-only edits; state that explicitly.
+Inspect existing documents and references first. New requirements must distinguish planned behavior
+from verified capabilities and avoid duplicating authoritative documents. Validate internal links,
+coverage in the current [repository file map](../architecture/REPOSITORY_FILE_MAP.md), instruction
+consistency and Markdown diff whitespace. Prove application/configuration files were not altered by the
+documentation task. Application tests need not be rerun for prose-only edits; state that explicitly.
 
 Completion of a change does not authorize deployment or establish production readiness. Apply [release process](RELEASE_PROCESS.md) separately. Release-blocking security/isolation or accessibility failures cannot be hidden under a generic “done” label.

@@ -1,6 +1,6 @@
 # Web dashboard design requirements
 
-Owner: Product Engineering. This document applies the repository [design system](../../docs/design/DESIGN_SYSTEM.md) to `apps/web-dashboard`; it does not replace [ARCHITECTURE.md](ARCHITECTURE.md).
+Owner: Product Engineering. This document applies the repository [design system](../../docs/design/DESIGN_SYSTEM.md) to `apps/web`; it does not replace [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Shell and hierarchy
 

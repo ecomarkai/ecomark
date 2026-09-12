@@ -4,7 +4,7 @@
 
 Ecomark is a multi-tenant commerce intelligence and governed automation SaaS for merchants and their teams. The initial delivery journey is Account → Organization → Store → Shopify connection → Data sync → Dashboard → AI analysis. Organization is the tenant boundary; stores belong to one organization. Product analysis begins in read-only recommendation mode.
 
-These instructions apply repository-wide. Nested instructions add requirements for their directory; they must not weaken tenant isolation, approval, secret handling or verification. Read [implementation status](IMPLEMENTATION_STATUS.md) before treating a scaffold or example as implemented behavior. MUST and MUST NOT are review gates; missing implementation is a gap, not an exemption.
+These instructions apply repository-wide. Nested instructions add requirements for their directory; they must not weaken tenant isolation, approval, secret handling or verification. Read [implementation status](IMPLEMENTATION_STATUS.md) and the [AI repository guide](AI_REPOSITORY_GUIDE.md) before treating a scaffold or example as implemented behavior. Use the generated [repository file map](docs/architecture/REPOSITORY_FILE_MAP.md) to locate files, then inspect task-relevant source directly. MUST and MUST NOT are review gates; missing implementation is a gap, not an exemption.
 
 ## Working rules
 

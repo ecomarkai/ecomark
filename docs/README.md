@@ -13,7 +13,10 @@ Existing security, contribution, scaling, ownership, architecture, operational, 
 - [Ownership](../OWNERSHIP.md)
 - [Project structure](../PROJECT_STRUCTURE.md)
 - [Implementation status](../IMPLEMENTATION_STATUS.md)
-- [Historical architecture-scaffold file snapshot](../FILE_INDEX.md)
+- [AI repository guide](../AI_REPOSITORY_GUIDE.md)
+- [Current repository file map](architecture/REPOSITORY_FILE_MAP.md)
+- [Machine-readable repository inventory](architecture/REPOSITORY_INVENTORY.json)
+- [Ecomark rename report](migrations/ECOMARK_RENAME_REPORT.md)
 
 ## Product
 
@@ -55,17 +58,18 @@ Existing security, contribution, scaling, ownership, architecture, operational, 
 - [Release process](delivery/RELEASE_PROCESS.md)
 - [Incident process](delivery/INCIDENT_PROCESS.md)
 
-## Web dashboard
+## Web application
 
-- [Dashboard architecture](../apps/web-dashboard/ARCHITECTURE.md)
-- [Dashboard agent instructions](../apps/web-dashboard/AGENTS.md)
-- [Dashboard design requirements](../apps/web-dashboard/DESIGN.md)
-- [Dashboard testing](../apps/web-dashboard/TESTING.md)
-- [Dashboard local development](../apps/web-dashboard/README.md)
+- [Web application architecture](../apps/web/ARCHITECTURE.md)
+- [Web application agent instructions](../apps/web/AGENTS.md)
+- [Web application design requirements](../apps/web/DESIGN.md)
+- [Web application testing](../apps/web/TESTING.md)
+- [Web application local development](../apps/web/README.md)
 
 ## Existing specialist documentation
 
 - [Architecture index](architecture/README.md) and the existing architecture specifications in `docs/architecture/`
+- [Repository inventory generator](../scripts/generate_repository_inventory.py)
 - [Architecture decision records](adr/README.md)
 - [Technical due-diligence index](due-diligence/README.md)
 - [MCP platform](../mcp/README.md) and [MCP runtime boundaries](../services/mcp-gateway/security/runtime-boundaries.md)

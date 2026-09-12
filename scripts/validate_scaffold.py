@@ -4,7 +4,20 @@ from pathlib import Path
 import yaml
 
 root = Path(__file__).resolve().parents[1]
-files = sorted(p for p in root.rglob('*') if p.is_file() and '__pycache__' not in p.parts)
+excluded_directories = {
+    '.git',
+    '.next',
+    '.pytest_cache',
+    '.turbo',
+    '.venv',
+    '__pycache__',
+    'node_modules',
+}
+files = sorted(
+    path
+    for path in root.rglob('*')
+    if path.is_file() and not excluded_directories.intersection(path.parts)
+)
 for path in files:
     if path.suffix == '.json':
         json.loads(path.read_text())

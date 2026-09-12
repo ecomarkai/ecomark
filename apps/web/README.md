@@ -1,4 +1,4 @@
-# Ecomark web dashboard
+# Ecomark web application
 
 This is the Next.js App Router shell for the Ecomark merchant dashboard. The current page is generated starter content; product screens and the Account → Organization → Store → Shopify connection → Data sync → Dashboard → AI analysis journey are not implemented yet. Read [ARCHITECTURE.md](ARCHITECTURE.md), [DESIGN.md](DESIGN.md), [TESTING.md](TESTING.md), and [AGENTS.md](AGENTS.md) before implementation.
 
@@ -7,16 +7,16 @@ This is the Next.js App Router shell for the Ecomark merchant dashboard. The cur
 From the repository root, use pnpm 10.0.0:
 
 ```bash
-pnpm --filter web-dashboard dev
+pnpm --filter @ecomarkai/web dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The application source is under `apps/web-dashboard/src`.
+Open [http://localhost:3000](http://localhost:3000). The application source is under `apps/web/src`.
 
 Run the currently available checks from the repository root:
 
 ```bash
-pnpm --filter web-dashboard lint
-pnpm --filter web-dashboard typecheck
+pnpm --filter @ecomarkai/web lint
+pnpm --filter @ecomarkai/web typecheck
 ```
 
 The dashboard does not yet have a runnable application test suite. See [TESTING.md](TESTING.md) for the required coverage and current gap.

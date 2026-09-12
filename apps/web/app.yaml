@@ -1,5 +1,5 @@
 version: 1
-id: web-dashboard
+id: web
 owner: ecomark-product
 purpose: "Merchant dashboard, onboarding, insights, approvals and AI chat"
 runtime: typescript

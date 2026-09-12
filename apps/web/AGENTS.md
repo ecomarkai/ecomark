@@ -8,7 +8,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# Ecomark web dashboard instructions
+# Ecomark web application instructions
 
 The root [Ecomark instructions](../../AGENTS.md) apply here. These rules add frontend requirements and must not weaken tenant isolation, authorization, approval, audit, localization, accessibility, or secret handling.
 
@@ -42,8 +42,8 @@ The root [Ecomark instructions](../../AGENTS.md) apply here. These rules add fro
 Run commands from the repository root with pnpm 10.0.0 only. Every implementation requires:
 
 ```bash
-pnpm --filter web-dashboard lint
-pnpm --filter web-dashboard typecheck
+pnpm --filter @ecomarkai/web lint
+pnpm --filter @ecomarkai/web typecheck
 ```
 
 Also run the relevant suites in [dashboard testing](TESTING.md) and the repository [testing strategy](../../docs/engineering/TESTING_STRATEGY.md). The dashboard currently has no application test script; do not report missing tests as passed. Report changed files, commands and outcomes, skipped checks, and remaining risks. Do not commit unless explicitly requested, and show the complete diff first.
